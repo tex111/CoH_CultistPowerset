@@ -518,7 +518,7 @@ Power Mastermind_Pets.Sister_3.Psychic_Scream
 
 Power Mastermind_Pets.Sister_3.Unholy_Ascension
 {
-	Name                 "Unholy Ascension"                     
+	Name                 "Unholy_Ascension"                     
 	DisplayName          "P1386049433"
 	Type                 kAuto
 	Accuracy             1

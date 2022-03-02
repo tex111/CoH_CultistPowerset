@@ -426,7 +426,7 @@ Power Mastermind_Pets.Sister_2.Subdue
 
 Power Mastermind_Pets.Sister_2.Forbidden_Knowledge
 {
-	Name                 "Forbidden Knowledge"                     
+	Name                 "Forbidden_Knowledge"                     
 	DisplayName          "P2091019232"
 	Type                 kAuto
 	Accuracy             1

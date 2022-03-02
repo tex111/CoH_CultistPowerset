@@ -162,7 +162,7 @@ Power Mastermind_Pets.Neophyte_3.Abyssal_Gaze
 
 Power Mastermind_Pets.Neophyte_3.Unholy_Ascension
 {
-	Name                 "Unholy Ascension"                     
+	Name                 "Unholy_Ascension"                     
 	DisplayName          "P1386049433"
 	Type                 kAuto
 	Accuracy             1
