@@ -586,3 +586,85 @@ PowerSet Mastermind_Summon.Thugs
 }
 // END
 // INSERT AFTER
+
+PowerSet Mastermind_Summon.Cult_Leader
+{
+	Name             "Cult Leader"
+	DisplayName      "P1849979927"
+	DisplayShortHelp "P1849979927"
+	DisplayHelp      "P3190575417"
+	IconName         "Necromancy_set.ico"
+
+	Powers Mastermind_Summon.Cult_Leader.Mental_Blast
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Summon.Cult_Leader.Neophytes
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Summon.Cult_Leader.Subdue
+	Available 1
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Summon.Cult_Leader.Forbidden_Knowledge
+	Available 5
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Summon.Cult_Leader.Psychic_Scream
+	Available 7
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Summon.Cult_Leader.Sisters
+	Available 11
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Summon.Cult_Leader.Summon_Familiars
+	Available 17
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Summon.Cult_Leader.Priestess
+	Available 25
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Summon.Cult_Leader.Unholy_Ascension
+	Available 31
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}

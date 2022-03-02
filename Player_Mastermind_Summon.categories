@@ -10,5 +10,6 @@ PowerCategory Mastermind_Summon
 	PowerSets Mastermind_Summon.Ninjas
 	PowerSets Mastermind_Summon.Robotics
 	PowerSets Mastermind_Summon.Thugs
+	PowerSets Mastermind_Summon.Cult_Leader
 }
 
