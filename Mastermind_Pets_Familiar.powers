@@ -349,7 +349,7 @@ Power Mastermind_Pets.Familiar.Self_Destruct
 	}
 }
 
-Power Mastermind_Pets.Howler_Wolf.Super_Leap
+Power Mastermind_Pets.Familiar.Super_Leap
 {
 	Name                 "Super_Leap"                  
 	DisplayName          "P1247110959"

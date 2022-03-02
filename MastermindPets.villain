@@ -9476,6 +9476,7 @@ VillainDef "MastermindPets_Dire_Wolf"
 	}
 }
 
+// Cult Leader Stuff
 VillainDef "MastermindPets_Neophyte"
 {
 	Class "Class_Minion_Henchman"

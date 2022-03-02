@@ -4028,7 +4028,6 @@ PowerSet Mastermind_Pets.Dire_Wolf_3
 // END
 // INSERT AFTER
 
-
 PowerSet Mastermind_Pets.Neophyte
 {
 	Name             "Neophyte"

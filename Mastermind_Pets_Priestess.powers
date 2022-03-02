@@ -195,6 +195,7 @@ Power Mastermind_Pets.Priestess.Resistance
 		CancelOnMiss         kFalse
 		StackType            kReplace
 	}
+}
 
 Power Mastermind_Pets.Priestess.Fly
 {
