@@ -4027,3 +4027,359 @@ PowerSet Mastermind_Pets.Dire_Wolf_3
 }
 // END
 // INSERT AFTER
+
+
+PowerSet Mastermind_Pets.Neophyte
+{
+	Name             "Neophyte"
+	DisplayName      "P206380807"
+	DisplayShortHelp "P206380807"
+	DisplayHelp      "P3522329310"
+	IconName         "Zombie_set.ico"
+
+	Powers Mastermind_Pets.Neophyte.Resistance
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Neophyte.Fly
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Neophyte.Mental_Blast
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+	
+	Powers Mastermind_Pets.Neophyte.Tenebrous_Tentacles
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+PowerSet Mastermind_Pets.Neophyte_2
+{
+	Name             "Neophyte_2"
+	DisplayName      "P206380807"
+	DisplayShortHelp "P206380807"
+	DisplayHelp      "P4153155629"
+	IconName         "Zombie_2_set.ico"
+
+	Powers Mastermind_Pets.Neophyte_2.Gloom
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Neophyte_2.Night_Fall
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Neophyte_2.Forbidden_Knowledge
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+PowerSet Mastermind_Pets.Neophyte_3
+{
+	Name             "Neophyte_3"
+	DisplayName      "P206380807"
+	DisplayShortHelp "P206380807"
+	DisplayHelp      "P4153155629"
+	IconName         "Zombie_3_set.ico"
+
+	Powers Mastermind_Pets.Neophyte_3.Abyssal_Gaze
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Neophyte_3.Unholy_Ascension
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+PowerSet Mastermind_Pets.Sister
+{
+	Name             "Sister"
+	DisplayName      "P615435132"
+	DisplayShortHelp "P3240964949"
+	DisplayHelp      "P1916322435"
+	IconName         "Skeleton_set.ico"
+
+	Powers Mastermind_Pets.Sister.Resistance
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Sister.Fly
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Sister.Mental_Blast
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Sister.Twilight_Grasp
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+PowerSet Mastermind_Pets.Sister_2
+{
+	Name             "Sister_2"
+	DisplayName      "P3262139490"
+	DisplayShortHelp "P3240964949"
+	DisplayHelp      "P1916322435"
+	IconName         "Skeleton_2_set.ico"
+
+	Powers Mastermind_Pets.Sister_2.Share_Pain
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Sister_2.Subdue
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Sister_2.Forbidden_Knowledge
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+PowerSet Mastermind_Pets.Sister_3
+{
+	Name             "Sister_3"
+	DisplayName      "P3262139490"
+	DisplayShortHelp "P3240964949"
+	DisplayHelp      "P1916322435"
+	IconName         "Skeleton_3_set.ico"
+
+	Powers Mastermind_Pets.Sister_3.World_of_Pain
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Sister_3.Psychic_Scream
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Sister_3.Unholy_Ascension
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+PowerSet Mastermind_Pets.Familiar
+{
+	Name             "Familiar"
+	DisplayName      "P3178236627"
+	DisplayShortHelp "P3178236627"
+	DisplayHelp      "P2757174098"
+	IconName         "Ghosts_set.ico"
+
+	Powers Mastermind_Pets.Familiar.Resistance
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Familiar.Super_Leap
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Familiar.Self_Destruct
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+	
+	Powers Mastermind_Pets.Familiar.Vicious_Bite
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Familiar.PM_Vicious_Bite
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+PowerSet Mastermind_Pets.Priestess
+{
+	Name             "Priestess"
+	DisplayName      "P3124304184"
+	DisplayShortHelp "P3124304184"
+	DisplayHelp      "P3106505096"
+	IconName         "Lich_set.ico"
+
+	Powers Mastermind_Pets.Priestess.Resistance
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Priestess.Fly
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Priestess.Mental_Blast
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Priestess.Psionic_Lance
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+PowerSet Mastermind_Pets.Priestess_2
+{
+	Name             "Priestess_2"
+	DisplayName      "P3124304184"
+	DisplayShortHelp "P3124304184"
+	DisplayHelp      "P3106505096"
+	IconName         "Lich_2_set.ico"
+
+	Powers Mastermind_Pets.Priestess_2.Telekinetic_blast
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Priestess_2.Life_Drain
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Priestess_2.Forbidden_Knowledge
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}
+PowerSet Mastermind_Pets.Priestess_3
+{
+	Name             "Priestess_3"
+	DisplayName      "P3124304184"
+	DisplayShortHelp "P3124304184"
+	DisplayHelp      "P3106505096"
+	IconName         "Lich_3_set.ico"
+
+	Powers Mastermind_Pets.Priestess_3.Torrent
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+	Powers Mastermind_Pets.Priestess_3.Unholy_Ascension
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+
+}

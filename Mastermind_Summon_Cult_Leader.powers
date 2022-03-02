@@ -1045,8 +1045,8 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kIgnore
-		Requires             MastermindPets_Zombie target.VillainName>
-		Reward               Mastermind_Pets.Zombie_3.Siphon_Life
+		Requires             MastermindPets_Neophyte target.VillainName>
+		Reward               MastermindPets_Neophyte_3.Abyssal_Gaze
 	}
 
 	AttribMod
@@ -1068,8 +1068,8 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kIgnore
-		Requires             MastermindPets_Zombie target.VillainName>
-		Reward               Mastermind_Pets.Zombie_3.Empower
+		Requires             MastermindPets_Neophyte target.VillainName>
+		Reward               MastermindPets_Neophyte_3.Unholy_Ascension
 	}
 
 	AttribMod
@@ -1091,8 +1091,32 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kIgnore
-		Requires             MastermindPets_Skeletal_Warrior target.VillainName>
-		Reward               Mastermind_Pets.Skeleton_3.Head_Splitter
+		Requires             MastermindPets_Sister target.VillainName>
+		Reward               MastermindPets_Sister_3.World_of_Pain
+	}
+
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kAbs
+		Attrib               kGrantPower
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kIgnore
+		Requires             MastermindPets_Sister target.VillainName>
+		Reward               MastermindPets_Sister_3.Psychic_Scream
 	}
 
 	AttribMod
@@ -1114,9 +1138,33 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kIgnore
-		Requires             MastermindPets_Skeletal_Warrior target.VillainName> kRage target> .5 > &&
-		Reward               Mastermind_Pets.Skeleton_3.Disembowel
+		Requires             MastermindPets_Sister target.VillainName>
+		Reward               MastermindPets_Sister_3.Unholy_Ascension
 	}
+	
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kAbs
+		Attrib               kGrantPower
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kIgnore
+		Requires             MastermindPets_Priestess target.VillainName>
+		Reward               MastermindPets_Priestess_3.Torrent
+	}
+
 
 	AttribMod
 	{
@@ -1137,398 +1185,7 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kIgnore
-		Requires             MastermindPets_Skeletal_Warrior target.VillainName>
-		Reward               Mastermind_Pets.Skeleton_3.Hack
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kGrantPower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Skeletal_Warrior target.VillainName>
-		Reward               Mastermind_Pets.Skeleton_3.Slash
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kGrantPower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Skeletal_Warrior target.VillainName>
-		Reward               Mastermind_Pets.Skeleton_3.Siphon_Life
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kRevokePower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Skeletal_Warrior target.VillainName>
-		Reward               Mastermind_Pets.Skeleton_2.Disembowel
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kRevokePower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Skeletal_Warrior target.VillainName>
-		Reward               Mastermind_Pets.Skeleton_2.Hack
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kRevokePower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Skeletal_Warrior target.VillainName>
-		Reward               Mastermind_Pets.Skeleton_2.Slash
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kRevokePower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Skeletal_Warrior target.VillainName>
-		Reward               Mastermind_Pets.Skeleton.Hack
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kRevokePower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Skeletal_Warrior target.VillainName>
-		Reward               Mastermind_Pets.Skeleton.Slash
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kGrantPower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Skeletal_Warrior target.VillainName>
-		Reward               Mastermind_Pets.Skeleton_3.Costume2
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kGrantPower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Skeletal_Warrior target.VillainName>
-		Reward               Mastermind_Pets.Skeleton_3.Mode2
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kGrantPower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Skeletal_Warrior target.VillainName>
-		Reward               Mastermind_Pets.Skeleton_3.Empower
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kRevokePower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Skeletal_Warrior target.VillainName>
-		Reward               Mastermind_Pets.Skeleton_2.Costume1
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kGrantPower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Lich target.VillainName>
-		Reward               Mastermind_Pets.Lich_3.Fearsome_Stare
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kGrantPower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Lich target.VillainName>
-		Reward               Mastermind_Pets.Lich_3.Petrifying_Gaze
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kGrantPower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Lich target.VillainName>
-		Reward               Mastermind_Pets.Lich_3.Costume2
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kGrantPower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Lich target.VillainName>
-		Reward               Mastermind_Pets.Lich_3.Mode2
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kGrantPower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Lich target.VillainName>
-		Reward               Mastermind_Pets.Lich_3.Empower
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kRevokePower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Lich target.VillainName>
-		Reward               Mastermind_Pets.Lich_2.Costume1
+		Requires             MastermindPets_Priestess target.VillainName>
+		Reward               MastermindPets_Priestess_3.Unholy_Ascension
 	}
 }

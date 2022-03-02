@@ -9476,3 +9476,1211 @@ VillainDef "MastermindPets_Dire_Wolf"
 	}
 }
 
+VillainDef "MastermindPets_Neophyte"
+{
+	Class "Class_Minion_Henchman"
+	Rank Pet
+	PowerTags HumanSkeleton, Human
+	DisplayDescription "P1811544301"
+	Gender Female
+	AIConfig "Pets_Ranged"
+	PetCommandability 1
+	CanZone
+	GroupDescription "P3643806322"
+	VillainGroup MastermindPets
+	PetCommandStrings
+	{
+		Passive P3745366123
+		Passive P1514633841
+		Defensive P2084040430
+		Defensive P1418684815
+		Aggressive P222950623
+		Aggressive P524251175
+		AttackTarget P3823799428
+		AttackTarget P257631926
+		AttackTarget P2068820245
+		AttackNotarget P2882973176
+		AttackNotarget P2667440945
+		StayHere P3855827701
+		StayHere P2519278384
+		FollowMe P4260423543
+		FollowMe P3766961086
+		FollowMe P3508248112
+		GotoSpot P2075632721
+		Dismiss P2519278384
+		Dismiss P1193836787
+		Dismiss P2806136780
+	}
+	Power "Mastermind_Pets" "Neophyte" "*"
+	Level 1
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  2
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  3
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  4
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  5
+	{
+		DDisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  6
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  7
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  8
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  9
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  10
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  11
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  12
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  13
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  14
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  15
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  16
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  17
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  18
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  19
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  20
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  21
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  22
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  23
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  24
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  25
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  26
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  27
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  28
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  29
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  30
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  31
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  32
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  33
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  34
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  35
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  36
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  37
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  38
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  39
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  40
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  41
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  42
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  43
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  44
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  45
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  46
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  47
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  48
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  49
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level 50
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level 51
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level 52
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level 53
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level 54
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+}
+
+VillainDef "MastermindPets_Sister"
+{
+	Class "Class_Lt_Henchman"
+	Rank Pet
+	PowerTags HumanSkeleton, Human
+	DisplayDescription "P1811544301"
+	Gender Female
+	AIConfig "Pets_Ranged"
+	PetCommandability 1
+	CanZone
+	GroupDescription "P3643806322"
+	VillainGroup MastermindPets
+	PetCommandStrings
+	{
+		Passive P3745366123
+		Passive P1514633841
+		Defensive P2084040430
+		Defensive P1418684815
+		Aggressive P222950623
+		Aggressive P524251175
+		AttackTarget P3823799428
+		AttackTarget P257631926
+		AttackTarget P2068820245
+		AttackNotarget P2882973176
+		AttackNotarget P2667440945
+		StayHere P3855827701
+		StayHere P2519278384
+		FollowMe P4260423543
+		FollowMe P3766961086
+		FollowMe P3508248112
+		GotoSpot P2075632721
+		Dismiss P2519278384
+		Dismiss P1193836787
+		Dismiss P2806136780
+	}
+	Power "Mastermind_Pets" "Sister" "*"
+	Level 1
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  2
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  3
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  4
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  5
+	{
+		DDisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  6
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  7
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  8
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  9
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  10
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  11
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  12
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  13
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  14
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  15
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  16
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  17
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  18
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  19
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  20
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  21
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  22
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  23
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  24
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  25
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  26
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  27
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  28
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  29
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  30
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  31
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  32
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  33
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  34
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  35
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  36
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  37
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  38
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  39
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  40
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  41
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  42
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  43
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  44
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  45
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  46
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  47
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  48
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  49
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level 50
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level 51
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level 52
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level 53
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level 54
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+}
+
+VillainDef "MastermindPets_Familiar"
+{	
+	Class "Class_Minion_Henchman"
+	Rank Pet
+	PowerTags Beast
+	DisplayDescription "P4139183969"
+	Gender Neuter
+	AIConfig "Pets_BeastMastery"
+	PetVisibility 0
+	CanZone
+	GroupDescription "P2094940195"
+	VillainGroup Pets
+	Power "Mastermind_Pets" "Familiar" "*"
+	Level 1
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 2
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 3
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 4
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 5
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 6
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 7
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 8
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 9
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 10
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 11
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 12
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 13
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 14
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 15
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 16
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 17
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 18
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 19
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 20
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 21
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 22
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 23
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 24
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 25
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 26
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 27
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 28
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 29
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 30
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 31
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 32
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 33
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 34
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 35
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 36
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 37
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 38
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 39
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 40
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 41
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 42
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 43
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 44
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 45
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 46
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 47
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 48
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 49
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 50
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 51
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 52
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 53
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+	Level 54
+	{
+		DisplayNames P2255263014
+		Costumes "Wolf"
+	}
+}
+
+VillainDef "MastermindPets_Priestess"
+{
+	Class "Class_Boss_Henchman"
+	Rank Pet
+	PowerTags HumanSkeleton, Human
+	DisplayDescription "P1811544301"
+	Gender Female
+	AIConfig "Pets_Ranged"
+	PetCommandability 1
+	CanZone
+	GroupDescription "P3643806322"
+	VillainGroup MastermindPets
+	PetCommandStrings
+	{
+		Passive P3745366123
+		Passive P1514633841
+		Defensive P2084040430
+		Defensive P1418684815
+		Aggressive P222950623
+		Aggressive P524251175
+		AttackTarget P3823799428
+		AttackTarget P257631926
+		AttackTarget P2068820245
+		AttackNotarget P2882973176
+		AttackNotarget P2667440945
+		StayHere P3855827701
+		StayHere P2519278384
+		FollowMe P4260423543
+		FollowMe P3766961086
+		FollowMe P3508248112
+		GotoSpot P2075632721
+		Dismiss P2519278384
+		Dismiss P1193836787
+		Dismiss P2806136780
+	}
+	Power "Mastermind_Pets" "Priestess" "*"
+	Level 1
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  2
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  3
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  4
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  5
+	{
+		DDisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  6
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  7
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  8
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  9
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  10
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  11
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  12
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  13
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  14
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  15
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  16
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  17
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  18
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  19
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  20
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  21
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  22
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  23
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  24
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  25
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  26
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  27
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  28
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  29
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  30
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  31
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  32
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  33
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  34
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  35
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  36
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  37
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  38
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  39
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  40
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  41
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  42
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  43
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  44
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  45
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  46
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  47
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  48
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level  49
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level 50
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level 51
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level 52
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level 53
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+	Level 54
+	{
+		DisplayNames P2146571422
+		Costumes "Mastermind_Cult_Neophyte"
+	}
+}
