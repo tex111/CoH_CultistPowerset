@@ -9535,7 +9535,7 @@ VillainDef "MastermindPets_Neophyte"
 	}
 	Level  5
 	{
-		DDisplayNames P2146571422
+		DisplayNames P2146571422
 		Costumes "Mastermind_Cult_Neophyte"
 	}
 	Level  6
@@ -9843,7 +9843,7 @@ VillainDef "MastermindPets_Sister"
 	}
 	Level  5
 	{
-		DDisplayNames P2146571422
+		DisplayNames P2146571422
 		Costumes "Mastermind_Cult_Neophyte"
 	}
 	Level  6
@@ -10436,7 +10436,7 @@ VillainDef "MastermindPets_Priestess"
 	}
 	Level  5
 	{
-		DDisplayNames P2146571422
+		DisplayNames P2146571422
 		Costumes "Mastermind_Cult_Neophyte"
 	}
 	Level  6

@@ -301,3 +301,55 @@ Power Mastermind_Pets.Priestess_2.Life_Drain
 		ContinuingFX         PFX
 	}
 }
+
+Power Mastermind_Pets.Priestess_2.Forbidden_Knowledge
+{
+	Name                 "Forbidden_Knowledge"                     
+	DisplayName          "P2091019232"
+	Type                 kAuto
+	Accuracy             1
+	EntsAffected         kCaster
+	EntsAutoHit          kCaster
+	Target               kCaster
+	Range                0
+	EnduranceCost        0
+	IdeaCost             0
+	InterruptTime        0
+	TimeToActivate       0
+	RechargeTime         0
+	ActivatePeriod       10
+	EffectArea           kCharacter
+	Radius               0
+	Arc                  0
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\Pets_ZombieHorde_Enchant.pfx"
+	include              menu\Powers\AnimFX\PlayerPowers\Pets_ZombieHorde_Enchant.pfx
+	DisplayShortHelp     "P2091019232"
+	DisplayHelp          "P1620618570"
+	IconName             "Necromancy_EnchantUndead.tga"
+	TimeToConfirm        0
+	ShowInManage         kFalse
+	ShowInInventory      kFalse
+	ShowInInfo           kFalse
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Melee_Ones"                  
+		Aspect               kCur
+		Attrib               kNullBool
+		Target               kSelf
+		Scale                10.25
+		Type                 kDuration
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            10
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         PFX
+	}
+}

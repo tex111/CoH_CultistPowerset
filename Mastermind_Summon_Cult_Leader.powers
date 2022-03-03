@@ -106,7 +106,7 @@ Power Mastermind_Summon.Cult_Leader.Mental_Blast
 Power Mastermind_Summon.Cult_Leader.Neophytes
 {
 	Name                 "Neophytes"                
-	DisplayName          "P1229299309"
+	DisplayName          "P9990000003"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
@@ -128,8 +128,8 @@ Power Mastermind_Summon.Cult_Leader.Neophytes
 	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kEnduranceDiscount_Boost, kDebuff_ToHit_Boost, kHeal_Boost
 	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MastermindSummon_Necromancy_ZombieHorde.PFX"
 	include              menu\Powers\AnimFX\PlayerPowers\MastermindSummon_Necromancy_ZombieHorde.PFX
-	DisplayShortHelp     "P1434861979"
-	DisplayHelp          "P436430207"
+	DisplayShortHelp     "P9990000004"
+	DisplayHelp          "P9990000005"
 	IconName             "Necromancy_CallZombieHorde.tga"
 	TimeToConfirm        0
 	ShowBuffIcon         kFalse
@@ -350,7 +350,7 @@ Power Mastermind_Summon.Cult_Leader.Subdue
 
 Power Mastermind_Summon.Cult_Leader.Forbidden_Knowledge
 {
-	Name                 "Forbidden Knowledge"              
+	Name                 "Forbidden_Knowledge"              
 	DisplayName          "P2926357230"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
@@ -424,7 +424,7 @@ Power Mastermind_Summon.Cult_Leader.Forbidden_Knowledge
 		CancelOnMiss         kFalse
 		StackType            kIgnore
 		Requires             MastermindPets_Neophyte target.VillainName>
-		Reward               Mastermind_Pets.Neophyte_2.Nightfall
+		Reward               Mastermind_Pets.Neophyte_2.Night_Fall
 	}
 
 	AttribMod
@@ -695,7 +695,7 @@ Power Mastermind_Summon.Cult_Leader.Psychic_Scream
 
 Power Mastermind_Summon.Cult_Leader.Sisters
 {
-	Name                 "Sisters of Pain"           
+	Name                 "Sisters"           
 	DisplayName          "P3240964949"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
@@ -743,7 +743,7 @@ Power Mastermind_Summon.Cult_Leader.Sisters
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kIgnore
-		EntityDef            MastermindPets_Sisters
+		EntityDef            MastermindPets_Sister
 		PriorityList         Pet
 		// Additional Power Attribs
 		DoNotTint            1
@@ -768,7 +768,7 @@ Power Mastermind_Summon.Cult_Leader.Sisters
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kIgnore
-		EntityDef            MastermindPets_Sisters
+		EntityDef            MastermindPets_Sister
 		PriorityList         Pet
 		Requires             combatlevel source> 23 >
 		// Additional Power Attribs
@@ -778,7 +778,7 @@ Power Mastermind_Summon.Cult_Leader.Sisters
 
 Power Mastermind_Summon.Cult_Leader.Summon_Familiars
 {
-	Name                 "Summon Familiars"             
+	Name                 "Summon_Familiars"             
 	DisplayName          "P2038123334"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
@@ -827,7 +827,7 @@ Power Mastermind_Summon.Cult_Leader.Summon_Familiars
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		EntityDef            Pets_Familiar
+		EntityDef            MastermindPets_Familiar
 		PriorityList         PL_FightPreferMelee
 		// Additional Power Attribs
 		KeepThroughDeath     kTrue
@@ -853,7 +853,7 @@ Power Mastermind_Summon.Cult_Leader.Summon_Familiars
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		EntityDef            Pets_Familiar
+		EntityDef            MastermindPets_Familiar
 		PriorityList         PL_FightPreferMelee
 		// Additional Power Attribs
 		KeepThroughDeath     kTrue
@@ -878,7 +878,7 @@ Power Mastermind_Summon.Cult_Leader.Summon_Familiars
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		EntityDef            Pets_Familiar
+		EntityDef            MastermindPets_Familiar
 		PriorityList         PL_FightPreferMelee
 		// Additional Power Attribs
 		KeepThroughDeath     kTrue
@@ -903,7 +903,7 @@ Power Mastermind_Summon.Cult_Leader.Summon_Familiars
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		EntityDef            Pets_Familiar
+		EntityDef            MastermindPets_Familiar
 		PriorityList         PL_FightPreferMelee
 		// Additional Power Attribs
 		KeepThroughDeath     kTrue
@@ -928,7 +928,7 @@ Power Mastermind_Summon.Cult_Leader.Summon_Familiars
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		EntityDef            Pets_Familiar
+		EntityDef            MastermindPets_Familiar
 		PriorityList         PL_FightPreferMelee
 		// Additional Power Attribs
 		KeepThroughDeath     kTrue
@@ -938,7 +938,7 @@ Power Mastermind_Summon.Cult_Leader.Summon_Familiars
 
 Power Mastermind_Summon.Cult_Leader.Priestess
 {
-	Name                 "High Priestess"                        
+	Name                 "Priestess"                        
 	DisplayName          "P3124304184"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
@@ -995,7 +995,7 @@ Power Mastermind_Summon.Cult_Leader.Priestess
 
 Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 {
-	Name                 "Unholy Ascension"            
+	Name                 "Unholy_Ascension"            
 	DisplayName          "P3036150683"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
@@ -1046,7 +1046,7 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 		CancelOnMiss         kFalse
 		StackType            kIgnore
 		Requires             MastermindPets_Neophyte target.VillainName>
-		Reward               MastermindPets_Neophyte_3.Abyssal_Gaze
+		Reward               Mastermind_Pets.Neophyte_3.Abyssal_Gaze
 	}
 
 	AttribMod
@@ -1069,7 +1069,7 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 		CancelOnMiss         kFalse
 		StackType            kIgnore
 		Requires             MastermindPets_Neophyte target.VillainName>
-		Reward               MastermindPets_Neophyte_3.Unholy_Ascension
+		Reward               Mastermind_Pets.Neophyte_3.Unholy_Ascension
 	}
 
 	AttribMod
@@ -1092,7 +1092,7 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 		CancelOnMiss         kFalse
 		StackType            kIgnore
 		Requires             MastermindPets_Sister target.VillainName>
-		Reward               MastermindPets_Sister_3.World_of_Pain
+		Reward               Mastermind_Pets.Sister_3.World_of_Pain
 	}
 
 
@@ -1116,7 +1116,7 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 		CancelOnMiss         kFalse
 		StackType            kIgnore
 		Requires             MastermindPets_Sister target.VillainName>
-		Reward               MastermindPets_Sister_3.Psychic_Scream
+		Reward               Mastermind_Pets.Sister_3.Psychic_Scream
 	}
 
 	AttribMod
@@ -1139,7 +1139,7 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 		CancelOnMiss         kFalse
 		StackType            kIgnore
 		Requires             MastermindPets_Sister target.VillainName>
-		Reward               MastermindPets_Sister_3.Unholy_Ascension
+		Reward               Mastermind_Pets.Sister_3.Unholy_Ascension
 	}
 	
 	AttribMod
@@ -1162,7 +1162,7 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 		CancelOnMiss         kFalse
 		StackType            kIgnore
 		Requires             MastermindPets_Priestess target.VillainName>
-		Reward               MastermindPets_Priestess_3.Torrent
+		Reward               Mastermind_Pets.Priestess_3.Torrent
 	}
 
 
@@ -1186,6 +1186,6 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 		CancelOnMiss         kFalse
 		StackType            kIgnore
 		Requires             MastermindPets_Priestess target.VillainName>
-		Reward               MastermindPets_Priestess_3.Unholy_Ascension
+		Reward               Mastermind_Pets.Priestess_3.Unholy_Ascension
 	}
 }
