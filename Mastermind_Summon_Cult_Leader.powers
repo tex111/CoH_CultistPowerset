@@ -106,7 +106,7 @@ Power Mastermind_Summon.Cult_Leader.Mental_Blast
 Power Mastermind_Summon.Cult_Leader.Neophytes
 {
 	Name                 "Neophytes"                
-	DisplayName          "P9990000003"
+	DisplayName          "P9999000003"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
@@ -128,8 +128,8 @@ Power Mastermind_Summon.Cult_Leader.Neophytes
 	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kEnduranceDiscount_Boost, kDebuff_ToHit_Boost, kHeal_Boost
 	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MastermindSummon_Necromancy_ZombieHorde.PFX"
 	include              menu\Powers\AnimFX\PlayerPowers\MastermindSummon_Necromancy_ZombieHorde.PFX
-	DisplayShortHelp     "P9990000004"
-	DisplayHelp          "P9990000005"
+	DisplayShortHelp     "P9999000004"
+	DisplayHelp          "P9999000005"
 	IconName             "Necromancy_CallZombieHorde.tga"
 	TimeToConfirm        0
 	ShowBuffIcon         kFalse

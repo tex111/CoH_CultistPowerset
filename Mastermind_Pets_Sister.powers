@@ -212,7 +212,7 @@ Power Mastermind_Pets.Sister.Fly
 	InterruptTime        0
 	TimeToActivate       0
 	RechargeTime         0
-	ActivatePeriod       0
+	ActivatePeriod       10
 	EffectArea           kCharacter
 	Radius               0
 	Arc                  0
@@ -230,12 +230,12 @@ Power Mastermind_Pets.Sister.Fly
 		Aspect               kCur
 		Attrib               kFly
 		Target               kSelf
-		Scale                1
+		Scale                5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             0
+		Duration             10.25
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -251,12 +251,12 @@ Power Mastermind_Pets.Sister.Fly
 		Aspect               kCur
 		Attrib               kMovementControl
 		Target               kSelf
-		Scale                2
+		Scale                25
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             0
+		Duration             10.25
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -272,12 +272,12 @@ Power Mastermind_Pets.Sister.Fly
 		Aspect               kCur
 		Attrib               kFlySpeed
 		Target               kSelf
-		Scale                1
+		Scale                5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             0
+		Duration             10.25
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -293,12 +293,12 @@ Power Mastermind_Pets.Sister.Fly
 		Aspect               kCur
 		Attrib               kMovementFriction
 		Target               kSelf
-		Scale                2
+		Scale                25
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             0
+		Duration             10.25
 		Magnitude            1
 		Period               0
 		Chance               1

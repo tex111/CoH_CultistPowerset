@@ -212,7 +212,7 @@ Power Mastermind_Pets.Neophyte.Fly
 	InterruptTime        0
 	TimeToActivate       0
 	RechargeTime         0
-	ActivatePeriod       0
+	ActivatePeriod       10
 	EffectArea           kCharacter
 	Radius               0
 	Arc                  0
@@ -230,12 +230,12 @@ Power Mastermind_Pets.Neophyte.Fly
 		Aspect               kCur
 		Attrib               kFly
 		Target               kSelf
-		Scale                1
+		Scale                5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             0
+		Duration             10.25
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -251,12 +251,12 @@ Power Mastermind_Pets.Neophyte.Fly
 		Aspect               kCur
 		Attrib               kMovementControl
 		Target               kSelf
-		Scale                2
+		Scale                25
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             0
+		Duration             10.25
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -272,12 +272,12 @@ Power Mastermind_Pets.Neophyte.Fly
 		Aspect               kCur
 		Attrib               kFlySpeed
 		Target               kSelf
-		Scale                1
+		Scale                5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             0
+		Duration             10.25
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -293,12 +293,12 @@ Power Mastermind_Pets.Neophyte.Fly
 		Aspect               kCur
 		Attrib               kMovementFriction
 		Target               kSelf
-		Scale                2
+		Scale                25
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             0
+		Duration             10.25
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -422,7 +422,7 @@ Power Mastermind_Pets.Neophyte.Tenebrous_Tentacles
 	EntsAffected         kFoe
 	EntsAutoHit          kNone
 	Target               kFoe
-	Range                40
+	Range                80
 	EnduranceCost        10.192
 	IdeaCost             0
 	TravelSuppression    2
@@ -430,9 +430,9 @@ Power Mastermind_Pets.Neophyte.Tenebrous_Tentacles
 	TimeToActivate       1.67
 	RechargeTime         10
 	ActivatePeriod       0
-	EffectArea           kCone
-	Radius               40
-	Arc                  40
+	EffectArea           kSphere
+	Radius               15
+	Arc                  0
 	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kDebuff_ToHit_Boost, kImmobilized_Boost, kRange_Boost
 	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_TenebrousTentacles.PFX"
 	include              menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_TenebrousTentacles.PFX

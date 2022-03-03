@@ -590,9 +590,9 @@ PowerSet Mastermind_Summon.Thugs
 PowerSet Mastermind_Summon.Cult_Leader
 {
 	Name             "Cult Leader"
-	DisplayName      "P9990000001"
-	DisplayShortHelp "P9990000001"
-	DisplayHelp      "P9990000002"
+	DisplayName      "P9999000001"
+	DisplayShortHelp "P9999000001"
+	DisplayHelp      "P9999000002"
 	IconName         "Necromancy_set.ico"
 
 	Powers Mastermind_Summon.Cult_Leader.Mental_Blast
