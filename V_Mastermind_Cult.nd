@@ -15,7 +15,7 @@ NPC "Mastermind_Cult_Neophyte"
 		ChestScale 1
 		WaistScale 0
 		HipScale 0
-		LegScale -0.2
+		LegScale -0.1
 		HeadScales -0.4286, 0.7233, 0
 		BrowScales -0.4724, 0.04286, -0.6267
 		CheekScales -0.4457, -0.501, 0.4495
@@ -83,17 +83,16 @@ CostumePart "Pants"
 		}
 		CostumePart "Boots"
 		{
-			Geometry V_FEM_BOOT.GEO/GEO_LlegR_Witch_02
-			Texture1 !X_Boot_Witch_02
-			Texture2 !boot_V_Witch_02_Mask
-			Fx none
+			Geometry N_Fem_Barbarian_Boot.geo/GEO_LlegR_Barbarian_Boot_02
+			Texture1 !X_Boot_Fem_Barbarian_01
+			Texture2 !Barbarian_Fem_Boot_01_Mask
 			DisplayName P2104750136
 			RegionName "Lower Body"
-			BodySetName Tight
-			Color1 31, 31, 31
-			Color2 31, 31, 31
-			Color3 31, 31, 31
-			Color4 227, 227, 227
+			BodySetName Tights/Skin
+			Color1  31,  31,  31
+			Color2  31,  31,  31
+			Color3  31,  31,  31
+			Color4  227,  227,  227
 		}
 		CostumePart "Belt"
 		{
@@ -394,7 +393,7 @@ NPC "Mastermind_Cult_Sister"
 		ChestScale 1
 		WaistScale 0
 		HipScale 0
-		LegScale -0.2
+		LegScale -0.1
 		HeadScales -0.4286, 0.7233, 0
 		BrowScales -0.4724, 0.04286, -0.6267
 		CheekScales -0.4457, -0.501, 0.4495
@@ -466,12 +465,12 @@ CostumePart ""
 
 CostumePart ""
 {
-	Geometry V_FEM_BOOT.GEO/GEO_LlegR_Witch_02
-	Texture1 !X_Boot_Witch_02
-	Texture2 !boot_V_Witch_02_Mask
+	Geometry N_Fem_Barbarian_Boot.geo/GEO_LlegR_Barbarian_Boot_02
+	Texture1 !X_Boot_Fem_Barbarian_01
+	Texture2 !Barbarian_Fem_Boot_01_Mask
 	DisplayName P2104750136
 	RegionName "Lower Body"
-	BodySetName Tight
+	BodySetName Tights/Skin
 	Color1  31,  31,  31
 	Color2  31,  31,  31
 	Color3  31,  31,  31
@@ -1106,7 +1105,7 @@ NPC "Mastermind_Cult_Priestess"
 		ChestScale 1
 		WaistScale 0
 		HipScale 0
-		LegScale -0.2
+		LegScale -0.1
 		HeadScales -0.4286, 0.7233, 0
 		BrowScales -0.4724, 0.04286, -0.6267
 		CheekScales -0.4457, -0.501, 0.4495
@@ -1178,9 +1177,9 @@ CostumePart ""
 
 CostumePart ""
 {
-	Geometry V_FEM_BOOT.GEO/GEO_LlegR_Witch_02
-	Texture1 !X_Boot_Witch_02
-	Texture2 !boot_V_Witch_02_Mask
+	Geometry N_Fem_Barbarian_Boot.geo/GEO_LlegR_Barbarian_Boot_02
+	Texture1 !X_Boot_Fem_Barbarian_01
+	Texture2 !Barbarian_Fem_Boot_01_Mask
 	DisplayName P2104750136
 	RegionName "Lower Body"
 	BodySetName Tights/Skin

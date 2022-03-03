@@ -4052,7 +4052,7 @@ PowerSet Mastermind_Pets.Neophyte
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Mastermind_Pets.Neophyte.Mental_Blast
+	Powers Mastermind_Pets.Neophyte.Dark_Blast
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999

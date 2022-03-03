@@ -123,7 +123,7 @@ Power Mastermind_Pets.Neophyte_2.Night_Fall
 	RechargeTime         10
 	ActivatePeriod       0
 	EffectArea           kSphere
-	Radius               25
+	Radius               20
 	Arc                  0
 	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kDebuff_ToHit_Boost, kRange_Boost
 	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_NightFall.PFX"

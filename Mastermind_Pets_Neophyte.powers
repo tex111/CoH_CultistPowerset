@@ -308,44 +308,44 @@ Power Mastermind_Pets.Neophyte.Fly
 	}
 }
 
-Power Mastermind_Pets.Neophyte.Mental_Blast
+Power Mastermind_Pets.Neophyte.Dark_Blast
 {
-	Name                 "Mental_Blast"                
-	DisplayName          "P2292978182"
+	Name                 "Dark_Blast"                  
+	DisplayName          "P369601562"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
-	AttackTypes          kRanged_Attack, kPsionic_Attack
+	AttackTypes          kRanged_Attack, kNegative_Energy_Attack
 	EntsAffected         kFoe
 	EntsAutoHit          kNone
 	Target               kFoe
-	Range                100
+	Range                80
 	EnduranceCost        5.2
 	IdeaCost             0
-	TravelSuppression    4
+	TravelSuppression    3
 	InterruptTime        0
-	TimeToActivate       1.67
+	TimeToActivate       1
 	RechargeTime         4
 	ActivatePeriod       0
 	EffectArea           kCharacter
 	Radius               0
 	Arc                  0
-	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kEnduranceDiscount_Boost, kRange_Boost, kRecharge_Boost
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\DefenderRanged_PsychicBlast_MentalBlast.PFX"
-	include              menu\Powers\AnimFX\PlayerPowers\DefenderRanged_PsychicBlast_MentalBlast.PFX
-	DisplayShortHelp     "P2707916763"
-	DisplayHelp          "P915789469"
-	IconName             "PsychicBlast_MentalBlast.tga"
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost, kDebuff_ToHit_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_DarkBlast.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_DarkBlast.PFX
+	DisplayShortHelp     "P4219235673"
+	DisplayHelp          "P2499574216"
+	IconName             "DarkCast_DarkBlast.tga"
 	TimeToConfirm        0
-	DisplayTargetShortHelp "P3214140212"
-	DisplayTargetHelp    "P3199664469"
+	DisplayTargetShortHelp "P2190949330"
+	DisplayTargetHelp    "P2735666026"
 
 	AttribMod
 	{
 		Name                 "Damage"                      
 		Table                "Ranged_Damage"               
 		Aspect               kAbs
-		Attrib               kPsionic
+		Attrib               knegative_Energy
 		Target               kTarget
 		Scale                1
 		Type                 kMagnitude
@@ -358,32 +358,10 @@ Power Mastermind_Pets.Neophyte.Mental_Blast
 		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P1500200816"
-		DisplayVictimHit     "P2929122759"
+		DisplayAttackerHit   "P1568870839"
+		DisplayVictimHit     "P4203961982"
 		StackType            kStack
 		Requires             enttype target> critter eq
-	}
-
-	AttribMod
-	{
-		Name                 "Slow"                        
-		Table                "Ranged_Slow"                 
-		Aspect               kStr
-		Attrib               kRechargeTime
-		Target               kTarget
-		Scale                0.3
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             6
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		ContinuingFX         PFX
 	}
 
 	AttribMod
@@ -391,9 +369,9 @@ Power Mastermind_Pets.Neophyte.Mental_Blast
 		Name                 "Damage"                      
 		Table                "Ranged_Damage"               
 		Aspect               kAbs
-		Attrib               kPsionic
+		Attrib               knegative_Energy
 		Target               kTarget
-		Scale                2.33850826190333
+		Scale                1.70417606130607
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
@@ -404,10 +382,32 @@ Power Mastermind_Pets.Neophyte.Mental_Blast
 		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P1500200816"
-		DisplayVictimHit     "P2929122759"
+		DisplayAttackerHit   "P1568870839"
+		DisplayVictimHit     "P4203961982"
 		StackType            kStack
 		Requires             enttype target> player eq
+	}
+
+	AttribMod
+	{
+		Name                 "DeBuff_ToHit"                
+		Table                "Ranged_DeBuff_ToHit"         
+		Aspect               kCur
+		Attrib               kToHit
+		Target               kTarget
+		Scale                0.75
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             6
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		ContinuingFX         PFX
 	}
 }
 
