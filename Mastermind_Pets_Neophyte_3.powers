@@ -16,7 +16,7 @@ Power Mastermind_Pets.Neophyte_3.Moonbeam
 	TravelSuppression    1
 	InterruptTime        0
 	TimeToActivate       1.33
-	RechargeTime         20
+	RechargeTime         12
 	ActivatePeriod       0
 	EffectArea           kCharacter
 	Radius               0

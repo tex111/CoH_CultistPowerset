@@ -65,7 +65,6 @@ Power Mastermind_Pets.Neophyte.Resistance
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		ContinuingFX         GenericContinuing/DamageResistance/BuffDamResContinuing.fx
 	}
 
 	AttribMod
@@ -158,6 +157,27 @@ Power Mastermind_Pets.Neophyte.Resistance
 		Table                "Ranged_Res_Dmg"              
 		Aspect               kRes
 		Attrib               knegative_Energy
+		Target               kTarget
+		Scale                1.5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+	
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
+		Aspect               kRes
+		Attrib               kToxic
 		Target               kTarget
 		Scale                1.5
 		Type                 kMagnitude
@@ -431,7 +451,7 @@ Power Mastermind_Pets.Neophyte.Tenebrous_Tentacles
 	RechargeTime         10
 	ActivatePeriod       0
 	EffectArea           kSphere
-	Radius               15
+	Radius               20
 	Arc                  0
 	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kDebuff_ToHit_Boost, kImmobilized_Boost, kRange_Boost
 	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_TenebrousTentacles.PFX"

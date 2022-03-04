@@ -399,29 +399,6 @@ Power Mastermind_Summon.Cult_Leader.Forbidden_Knowledge
 		CancelOnMiss         kFalse
 		StackType            kIgnore
 		Requires             MastermindPets_Neophyte target.VillainName>
-		Reward               Mastermind_Pets.Neophyte_2.Abyssal_Gaze
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kGrantPower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Neophyte target.VillainName>
 		Reward               Mastermind_Pets.Neophyte_2.Night_Fall
 	}
 
