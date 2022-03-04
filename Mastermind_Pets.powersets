@@ -4053,7 +4053,7 @@ PowerSet Mastermind_Pets.Neophyte
 	MaxDifficulty 9999
 	
 
-	Powers Mastermind_Pets.Neophyte.Dark_Blast
+	Powers Mastermind_Pets.Neophyte.Gloom
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4078,7 +4078,7 @@ PowerSet Mastermind_Pets.Neophyte_2
 	DisplayHelp      "P4153155629"
 	IconName         "Zombie_2_set.ico"
 
-	Powers Mastermind_Pets.Neophyte_2.Gloom
+	Powers Mastermind_Pets.Neophyte_2.Abyssal_Gaze
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4111,7 +4111,7 @@ PowerSet Mastermind_Pets.Neophyte_3
 	DisplayHelp      "P4153155629"
 	IconName         "Zombie_3_set.ico"
 
-	Powers Mastermind_Pets.Neophyte_3.Abyssal_Gaze
+	Powers Mastermind_Pets.Neophyte_3.Moonbeam
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999

@@ -20,8 +20,6 @@ Power Mastermind_Pets.Priestess.Resistance
 	Radius               0
 	Arc                  0
 	IgnoreStrength       True
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\Pets_ZombieHorde_Resistance.pfx"
-	include              menu\Powers\AnimFX\PlayerPowers\Pets_ZombieHorde_Resistance.pfx
 	DisplayShortHelp     "P1354908888"
 	DisplayHelp          "P2970197976"
 	IconName             "DarkArmor_DarkEmbrace.tga"
@@ -29,39 +27,17 @@ Power Mastermind_Pets.Priestess.Resistance
 
 	AttribMod
 	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
-		Aspect               kCur
-		Attrib               kSleep
-		Target               kSelf
-		Scale                -4
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             10.25
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kReplace
-		ContinuingFX         PFX
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
 		Aspect               kRes
-		Attrib               kSleep
-		Target               kSelf
-		Scale                0.5
+		Attrib               kPsionic
+		Target               kTarget
+		Scale                1.5
 		Type                 kMagnitude
-		AllowStrength        kFalse
+		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10.25
+		Duration             90
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -72,80 +48,39 @@ Power Mastermind_Pets.Priestess.Resistance
 
 	AttribMod
 	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
-		Aspect               kCur
-		Attrib               kTerrorized
-		Target               kSelf
-		Scale                -4
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             10.25
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kReplace
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
-		Aspect               kRes
-		Attrib               kTerrorized
-		Target               kSelf
-		Scale                0.5
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             10.25
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kReplace
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
-		Aspect               kCur
-		Attrib               kStun
-		Target               kSelf
-		Scale                -1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             10.25
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kReplace
-	}
-
-	AttribMod
-	{
-		Name                 "SpeedJumping"                
-		Table                "Melee_SpeedJumping"          
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
 		Aspect               kRes
 		Attrib               kSmashing
-		Target               kSelf
-		Scale                0.105
+		Target               kTarget
+		Scale                1.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10.25
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         GenericContinuing/DamageResistance/BuffDamResContinuing.fx
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
+		Aspect               kRes
+		Attrib               kLethal
+		Target               kTarget
+		Scale                1.5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -156,17 +91,38 @@ Power Mastermind_Pets.Priestess.Resistance
 
 	AttribMod
 	{
-		Name                 "SpeedJumping"                
-		Table                "Melee_SpeedJumping"          
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
+		Aspect               kRes
+		Attrib               kFire
+		Target               kTarget
+		Scale                1.5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
 		Aspect               kRes
 		Attrib               kCold
-		Target               kSelf
-		Scale                0.105
+		Target               kTarget
+		Scale                1.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10.25
+		Duration             90
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -177,17 +133,38 @@ Power Mastermind_Pets.Priestess.Resistance
 
 	AttribMod
 	{
-		Name                 "SpeedJumping"                
-		Table                "Melee_SpeedJumping"          
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
 		Aspect               kRes
-		Attrib               knegative_Energy
-		Target               kSelf
-		Scale                0.105
+		Attrib               kEnergy
+		Target               kTarget
+		Scale                1.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10.25
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
+		Aspect               kRes
+		Attrib               knegative_Energy
+		Target               kTarget
+		Scale                1.5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
 		Magnitude            1
 		Period               0
 		Chance               1

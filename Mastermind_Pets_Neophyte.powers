@@ -20,8 +20,6 @@ Power Mastermind_Pets.Neophyte.Resistance
 	Radius               0
 	Arc                  0
 	IgnoreStrength       True
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\Pets_ZombieHorde_Resistance.pfx"
-	include              menu\Powers\AnimFX\PlayerPowers\Pets_ZombieHorde_Resistance.pfx
 	DisplayShortHelp     "P1354908888"
 	DisplayHelp          "P2970197976"
 	IconName             "DarkArmor_DarkEmbrace.tga"
@@ -29,39 +27,17 @@ Power Mastermind_Pets.Neophyte.Resistance
 
 	AttribMod
 	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
-		Aspect               kCur
-		Attrib               kSleep
-		Target               kSelf
-		Scale                -4
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             10.25
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kReplace
-		ContinuingFX         PFX
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
 		Aspect               kRes
-		Attrib               kSleep
-		Target               kSelf
-		Scale                0.5
+		Attrib               kPsionic
+		Target               kTarget
+		Scale                1.5
 		Type                 kMagnitude
-		AllowStrength        kFalse
+		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10.25
+		Duration             90
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -72,80 +48,39 @@ Power Mastermind_Pets.Neophyte.Resistance
 
 	AttribMod
 	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
-		Aspect               kCur
-		Attrib               kTerrorized
-		Target               kSelf
-		Scale                -4
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             10.25
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kReplace
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
-		Aspect               kRes
-		Attrib               kTerrorized
-		Target               kSelf
-		Scale                0.5
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             10.25
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kReplace
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
-		Aspect               kCur
-		Attrib               kStun
-		Target               kSelf
-		Scale                -1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             10.25
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kReplace
-	}
-
-	AttribMod
-	{
-		Name                 "SpeedJumping"                
-		Table                "Melee_SpeedJumping"          
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
 		Aspect               kRes
 		Attrib               kSmashing
-		Target               kSelf
-		Scale                0.105
+		Target               kTarget
+		Scale                1.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10.25
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+		ContinuingFX         GenericContinuing/DamageResistance/BuffDamResContinuing.fx
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
+		Aspect               kRes
+		Attrib               kLethal
+		Target               kTarget
+		Scale                1.5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -156,17 +91,38 @@ Power Mastermind_Pets.Neophyte.Resistance
 
 	AttribMod
 	{
-		Name                 "SpeedJumping"                
-		Table                "Melee_SpeedJumping"          
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
+		Aspect               kRes
+		Attrib               kFire
+		Target               kTarget
+		Scale                1.5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
 		Aspect               kRes
 		Attrib               kCold
-		Target               kSelf
-		Scale                0.105
+		Target               kTarget
+		Scale                1.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10.25
+		Duration             90
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -177,17 +133,38 @@ Power Mastermind_Pets.Neophyte.Resistance
 
 	AttribMod
 	{
-		Name                 "SpeedJumping"                
-		Table                "Melee_SpeedJumping"          
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
 		Aspect               kRes
-		Attrib               knegative_Energy
-		Target               kSelf
-		Scale                0.105
+		Attrib               kEnergy
+		Target               kTarget
+		Scale                1.5
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10.25
+		Duration             90
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "Res_Dmg"                     
+		Table                "Ranged_Res_Dmg"              
+		Aspect               kRes
+		Attrib               knegative_Energy
+		Target               kTarget
+		Scale                1.5
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             90
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -331,10 +308,10 @@ Power Mastermind_Pets.Neophyte.Super_Leap
 	}
 }
 
-Power Mastermind_Pets.Neophyte.Dark_Blast
+Power Mastermind_Pets.Neophyte.Gloom
 {
-	Name                 "Dark_Blast"                  
-	DisplayName          "P369601562"
+	Name                 "Gloom"                       
+	DisplayName          "P3488406895"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
@@ -343,25 +320,25 @@ Power Mastermind_Pets.Neophyte.Dark_Blast
 	EntsAutoHit          kNone
 	Target               kFoe
 	Range                80
-	EnduranceCost        5.2
+	EnduranceCost        5
 	IdeaCost             0
 	TravelSuppression    3
 	InterruptTime        0
-	TimeToActivate       1
+	TimeToActivate       1.1
 	RechargeTime         4
 	ActivatePeriod       0
 	EffectArea           kCharacter
 	Radius               0
 	Arc                  0
 	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost, kDebuff_ToHit_Boost
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_DarkBlast.PFX"
-	include              menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_DarkBlast.PFX
-	DisplayShortHelp     "P4219235673"
-	DisplayHelp          "P2499574216"
-	IconName             "DarkCast_DarkBlast.tga"
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_Gloom.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_Gloom.PFX
+	DisplayShortHelp     "P2098711268"
+	DisplayHelp          "P905511279"
+	IconName             "DarkCast_SoulDrain.tga"
 	TimeToConfirm        0
-	DisplayTargetShortHelp "P2190949330"
-	DisplayTargetHelp    "P2735666026"
+	DisplayTargetShortHelp "P533426840"
+	DisplayTargetHelp    "P4275364033"
 
 	AttribMod
 	{
@@ -370,19 +347,19 @@ Power Mastermind_Pets.Neophyte.Dark_Blast
 		Aspect               kAbs
 		Attrib               knegative_Energy
 		Target               kTarget
-		Scale                1
+		Scale                0.22
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
 		Delay                0
-		Duration             0
+		Duration             3.6
 		Magnitude            1
-		Period               0
+		Period               0.5
 		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P1568870839"
-		DisplayVictimHit     "P4203961982"
+		DisplayAttackerHit   "P4165490657"
+		DisplayVictimHit     "P3094782639"
 		StackType            kStack
 		Requires             enttype target> critter eq
 	}
@@ -394,19 +371,19 @@ Power Mastermind_Pets.Neophyte.Dark_Blast
 		Aspect               kAbs
 		Attrib               knegative_Energy
 		Target               kTarget
-		Scale                1.70417606130607
+		Scale                0.251906977316076
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
 		Delay                0
-		Duration             0
+		Duration             3.6
 		Magnitude            1
-		Period               0
+		Period               0.5
 		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P1568870839"
-		DisplayVictimHit     "P4203961982"
+		DisplayAttackerHit   "P4165490657"
+		DisplayVictimHit     "P3094782639"
 		StackType            kStack
 		Requires             enttype target> player eq
 	}
@@ -423,7 +400,7 @@ Power Mastermind_Pets.Neophyte.Dark_Blast
 		AllowStrength        kTrue
 		AllowResistance      kTrue
 		Delay                0
-		Duration             6
+		Duration             10
 		Magnitude            1
 		Period               0
 		Chance               1.00
@@ -446,7 +423,7 @@ Power Mastermind_Pets.Neophyte.Tenebrous_Tentacles
 	EntsAutoHit          kNone
 	Target               kFoe
 	Range                80
-	EnduranceCost        10.192
+	EnduranceCost        10
 	IdeaCost             0
 	TravelSuppression    2
 	InterruptTime        0

@@ -427,7 +427,7 @@ Power Mastermind_Pets.Sister_2.Subdue
 Power Mastermind_Pets.Sister_2.Forbidden_Knowledge
 {
 	Name                 "Forbidden_Knowledge"                     
-	DisplayName          "P2091019232"
+	DisplayName          "P9999000006"
 	Type                 kAuto
 	Accuracy             1
 	EntsAffected         kCaster
@@ -443,11 +443,9 @@ Power Mastermind_Pets.Sister_2.Forbidden_Knowledge
 	EffectArea           kCharacter
 	Radius               0
 	Arc                  0
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\Pets_ZombieHorde_Enchant.pfx"
-	include              menu\Powers\AnimFX\PlayerPowers\Pets_ZombieHorde_Enchant.pfx
-	DisplayShortHelp     "P2091019232"
-	DisplayHelp          "P1620618570"
-	IconName             "Necromancy_EnchantUndead.tga"
+	DisplayShortHelp     "P9999000007"
+	DisplayHelp          "P9999000008"
+	IconName             "DemonSummoning_EnchantDemon.tga"
 	TimeToConfirm        0
 	ShowInManage         kFalse
 	ShowInInventory      kFalse

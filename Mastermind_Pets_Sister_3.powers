@@ -519,7 +519,7 @@ Power Mastermind_Pets.Sister_3.Psychic_Scream
 Power Mastermind_Pets.Sister_3.Unholy_Ascension
 {
 	Name                 "Unholy_Ascension"                     
-	DisplayName          "P1386049433"
+	DisplayName          "P9999000019"
 	Type                 kAuto
 	Accuracy             1
 	EntsAffected         kCaster
@@ -537,9 +537,9 @@ Power Mastermind_Pets.Sister_3.Unholy_Ascension
 	Arc                  0
 	VisualFX             "menu\Powers\AnimFX\PlayerPowers\Pets_ZombieHorde_Empower.pfx"
 	include              menu\Powers\AnimFX\PlayerPowers\Pets_ZombieHorde_Empower.pfx
-	DisplayShortHelp     "P1386049433"
-	DisplayHelp          "P2496964102"
-	IconName             "Necromancy_DarkEmpowerment.tga"
+	DisplayShortHelp     "P9999000007"
+	DisplayHelp          "P9999000020"
+	IconName             "DemonSummoning_AbyssalEmpowerment.tga"
 	TimeToConfirm        0
 	ShowInManage         kFalse
 	ShowInInventory      kFalse
