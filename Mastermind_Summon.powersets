@@ -589,7 +589,7 @@ PowerSet Mastermind_Summon.Thugs
 
 PowerSet Mastermind_Summon.Cult_Leader
 {
-	Name             "Cult Leader"
+	Name             "Cult_Leader"
 	DisplayName      "P9999000001"
 	DisplayShortHelp "P9999000001"
 	DisplayHelp      "P9999000002"

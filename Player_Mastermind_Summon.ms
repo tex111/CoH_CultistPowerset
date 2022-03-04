@@ -868,7 +868,11 @@
 // Power Help Text :
 "P1969754091" "Permanently Upgrade the most advanced ammo, weapons and training to all of your Thug Henchman. The Upgraded Thug will gain new powers, weapons and abilities. The powers gained are unique and dependent upon the type of Thug Henchman that is Upgraded. This power only works on your Thug Henchmen and you can only Upgrade the Equipment of your Thug Henchmen once with this power. Recharge: Medium"
 
+// -------------------------------------------------------------------------------- 
+// -------------------------------------------------------------------------------- 
 // Eoland MOD
+// -------------------------------------------------------------------------------- 
+// -------------------------------------------------------------------------------- 
 // Powerset: Cult Leader
 // Displayname
 "P9999000001" "Cult Leader"
@@ -884,4 +888,44 @@
 "P9999000004" "Summon Neophytes"
 // Power Help Text :
 "P9999000005" "Summons one to three Neophytes (depending on your level) to do your bidding. Neophytes are spell casters that focus on area damage and dots. You may only have 3 Neophytes under your control at any given time.  If you attempt to summon more Neophytes, you can only replace the ones you have lost in battle.  If you already have three, the power will fail. Recharge: Very Long"
+// ---------------------------------------------
+// Forbidden Knowledge
+// Display Name :
+"P9999000006" "Forbidden Knowledge"
+// Power Mouse-Over Text :
+"P9999000007" "Ranged, Upgrade Cultists"
+// Power Help Text :
+"P9999000008" "Teach your cultists more dark secrets.  This power permanently bestows new spells to all of your Cultists. The powers gained are unique and dependent upon the type of Cultist.  This power only works on your Cultist Henchmen and you can only Upgrade your Cultist Henchmen once with this power. Recharge: Fast"
+// Power AttackerHit Message :
+"P9999000009" "You upgrade {PlayerDest} with more powerful spells."
+// ---------------------------------------------
+// Sisters
+// Display Name :
+"P9999000010" "Sisters of Pain"
+// Power Mouse-Over Text :
+"P9999000011" "Summon Sisters of Pain"
+// Power Help Text :
+"P9999000012" "Summons one to two Sisters of Pain (depending on your level) to do your bidding. Sisters of Pain are spell casters that focus on buffing and healing. You may only have 2 Sisters of Pain under your control at any given time.  If you attempt to summon more Sisters of Pain, you can only replace the ones you have lost in battle.  If you already have two, the power will fail. Recharge: Very Long"
+// ---------------------------------------------
+// Summon Familiars
+// Display Name :
+"P9999000013" "Summon Familiars"
+// Power Mouse-Over Text :
+"P9999000014" "Summon a group of Familiars"
+// Power Help Text :
+"P9999000015" "Summons five Familairs. They are only temporarily under your control and will act independantly. Recharge: Very Long"
+// ---------------------------------------------
+// Priestess
+// Display Name :
+"P9999000016" "High Priest"
+// Power Mouse-Over Text :
+"P9999000017" "Summon High Priest"
+// Power Help Text :
+"P9999000018" "Summons a High Priest to do your bidding. The High Priest is a spell caster that focuses on single target damage. You may only have 1 High Priest under your control at any given time.  If you attempt to summon another High Priest the power will fail. Recharge: Very Long"
+// ---------------------------------------------
+// Unholy Ascension
+// Display Name :
+"P9999000019" "Unholy Ascension"
+// Power Help Text :
+"P9999000020" "Teach your cultists recieve a gift from the dark gods you worship.  This power permanently bestows new spells to all of your Cultists. The powers gained are unique and dependent upon the type of Cultist.  This power only works on your Cultist Henchmen and you can only Upgrade your Cultist Henchmen once with this power. Recharge: Fast"
 // ---------------------------------------------

@@ -382,7 +382,7 @@ Power Mastermind_Pets.Familiar.Super_Leap
 		Aspect               kCur
 		Attrib               kJumpHeight
 		Target               kSelf
-		Scale                1
+		Scale                10
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -403,7 +403,7 @@ Power Mastermind_Pets.Familiar.Super_Leap
 		Aspect               kCur
 		Attrib               kSpeedJumping
 		Target               kSelf
-		Scale                1
+		Scale                10
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -424,7 +424,7 @@ Power Mastermind_Pets.Familiar.Super_Leap
 		Aspect               kCur
 		Attrib               kRunSpeed
 		Target               kSelf
-		Scale                0.1
+		Scale                10
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -437,26 +437,27 @@ Power Mastermind_Pets.Familiar.Super_Leap
 		CancelOnMiss         kFalse
 		StackType            kReplace
 	}
-
-	AttribMod
+	
+		AttribMod
 	{
 		Name                 "Control"                     
 		Table                "Melee_Control"               
 		Aspect               kCur
 		Attrib               kMovementControl
 		Target               kSelf
-		Scale                10
+		Scale                25
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10
+		Duration             10.25
 		Magnitude            1
 		Period               0
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
+		CancelEvents         Held, Stunned, Sleep
 	}
 
 	AttribMod
@@ -466,18 +467,19 @@ Power Mastermind_Pets.Familiar.Super_Leap
 		Aspect               kCur
 		Attrib               kMovementFriction
 		Target               kSelf
-		Scale                10
+		Scale                25
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10
+		Duration             10.25
 		Magnitude            1
 		Period               0
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
+		CancelEvents         Held, Stunned, Sleep
 	}
 }
 

@@ -197,12 +197,14 @@ Power Mastermind_Pets.Neophyte.Resistance
 	}
 }
 
-Power Mastermind_Pets.Neophyte.Fly
+Power Mastermind_Pets.Neophyte.Super_Leap
 {
-	Name                 "Fly"                         
-	DisplayName          "P1808254291"
+	Name                 "Super_Leap"                  
+	DisplayName          "P1247110959"
+	ModesDisallowed      kDisable_All
 	Type                 kAuto
 	Accuracy             1
+	AIGroups             kJump
 	EntsAffected         kCaster
 	EntsAutoHit          kCaster
 	Target               kCaster
@@ -211,31 +213,29 @@ Power Mastermind_Pets.Neophyte.Fly
 	IdeaCost             0
 	InterruptTime        0
 	TimeToActivate       0
-	RechargeTime         0
-	ActivatePeriod       10
+	RechargeTime         10
+	ActivatePeriod       0
 	EffectArea           kCharacter
 	Radius               0
 	Arc                  0
-	BoostsAllowed        kSpeedFlying_Boost
-	DisplayShortHelp     "P1159653558"
-	DisplayHelp          "P3836082112"
-	IconName             "Flight_TravelFlight.tga"
+	DisplayShortHelp     "P3583698820"
+	DisplayHelp          "P1720205226"
+	IconName             "Jump_LongJump.tga"
 	TimeToConfirm        0
-	ShowBuffIcon         kFalse
 
 	AttribMod
 	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
+		Name                 "Leap"                        
+		Table                "Melee_Leap"                  
 		Aspect               kCur
-		Attrib               kFly
+		Attrib               kJumpHeight
 		Target               kSelf
-		Scale                5
+		Scale                10
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10.25
+		Duration             10
 		Magnitude            1
 		Period               0
 		Chance               1
@@ -245,6 +245,48 @@ Power Mastermind_Pets.Neophyte.Fly
 	}
 
 	AttribMod
+	{
+		Name                 "SpeedJumping"                
+		Table                "Melee_SpeedJumping"          
+		Aspect               kCur
+		Attrib               kSpeedJumping
+		Target               kSelf
+		Scale                10
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             10
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+
+	AttribMod
+	{
+		Name                 "SpeedRunning"                
+		Table                "Melee_SpeedRunning"          
+		Aspect               kCur
+		Attrib               kRunSpeed
+		Target               kSelf
+		Scale                10
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             10.25
+		Magnitude            1
+		Period               0
+		Chance               1.0
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kReplace
+	}
+	
+		AttribMod
 	{
 		Name                 "Control"                     
 		Table                "Melee_Control"               
@@ -263,27 +305,7 @@ Power Mastermind_Pets.Neophyte.Fly
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-	}
-
-	AttribMod
-	{
-		Name                 "SpeedFlying"                 
-		Table                "Melee_SpeedFlying"           
-		Aspect               kCur
-		Attrib               kFlySpeed
-		Target               kSelf
-		Scale                5
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kFalse
-		Delay                0
-		Duration             10.25
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kReplace
+		CancelEvents         Held, Stunned, Sleep
 	}
 
 	AttribMod
@@ -305,6 +327,7 @@ Power Mastermind_Pets.Neophyte.Fly
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
+		CancelEvents         Held, Stunned, Sleep
 	}
 }
 

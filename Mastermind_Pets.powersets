@@ -4044,13 +4044,14 @@ PowerSet Mastermind_Pets.Neophyte
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Mastermind_Pets.Neophyte.Fly
+	Powers Mastermind_Pets.Neophyte.Super_Leap
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
 	AIMaxRankCon 9999
 	MinDifficulty 2
 	MaxDifficulty 9999
+	
 
 	Powers Mastermind_Pets.Neophyte.Dark_Blast
 	Available 0
@@ -4143,13 +4144,14 @@ PowerSet Mastermind_Pets.Sister
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Mastermind_Pets.Sister.Fly
+	Powers Mastermind_Pets.Sister.Super_Leap
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
 	AIMaxRankCon 9999
 	MinDifficulty 2
 	MaxDifficulty 9999
+	
 
 	Powers Mastermind_Pets.Sister.Mental_Blast
 	Available 0
@@ -4299,7 +4301,7 @@ PowerSet Mastermind_Pets.Priestess
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Mastermind_Pets.Priestess.Fly
+	Powers Mastermind_Pets.Priestess.Super_Leap
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999

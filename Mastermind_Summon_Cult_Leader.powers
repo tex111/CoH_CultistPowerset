@@ -126,11 +126,9 @@ Power Mastermind_Summon.Cult_Leader.Neophytes
 	Arc                  0
 	TargetNearGround     kTrue
 	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kEnduranceDiscount_Boost, kDebuff_ToHit_Boost, kHeal_Boost
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MastermindSummon_Necromancy_ZombieHorde.PFX"
-	include              menu\Powers\AnimFX\PlayerPowers\MastermindSummon_Necromancy_ZombieHorde.PFX
 	DisplayShortHelp     "P9999000004"
 	DisplayHelp          "P9999000005"
-	IconName             "Necromancy_CallZombieHorde.tga"
+	IconName             "DemonSummoning_SummonDemonlings.tga"
 	TimeToConfirm        0
 	ShowBuffIcon         kFalse
 
@@ -351,32 +349,30 @@ Power Mastermind_Summon.Cult_Leader.Subdue
 Power Mastermind_Summon.Cult_Leader.Forbidden_Knowledge
 {
 	Name                 "Forbidden_Knowledge"              
-	DisplayName          "P2926357230"
+	DisplayName          "P9999000006"
 	ModesDisallowed      kDisable_All
-	Type                 kClick
+	Type                 kAuto
 	Accuracy             1
 	AIGroups             kMastermindUpgrade1
 	EntsAffected         kMyPet
 	EntsAutoHit          kMyPet
-	Target               kMyPet
-	Range                50
-	EnduranceCost        22.75
+	Target               kCaster
+	Range                0
+	EnduranceCost        0
 	IdeaCost             0
 	InterruptTime        0
-	TimeToActivate       2.07
-	RechargeTime         6
+	TimeToActivate       0
+	RechargeTime         10
 	ActivatePeriod       0
 	EffectArea           kSphere
 	Radius               30
 	Arc                  0
 	TargetNearGround     kTrue
 	BoostsAllowed        kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MastermindSummon_Necromancy_EnchantUndead.PFX"
-	include              menu\Powers\AnimFX\PlayerPowers\MastermindSummon_Necromancy_EnchantUndead.PFX
-	DisplayShortHelp     "P1852059004"
-	DisplayHelp          "P2551597979"
-	DisplayAttackerHit   "P445682185"
-	IconName             "Necromancy_EnchantUndead.tga"
+	DisplayShortHelp     "P9999000007"
+	DisplayHelp          "P9999000008"
+	DisplayAttackerHit   "P9999000009"
+	IconName             "DemonSummoning_EnchantDemon.tga"
 	TimeToConfirm        0
 	MaxTargetsHit        16
 	AnimMainTargetOnly   kTrue
@@ -696,7 +692,7 @@ Power Mastermind_Summon.Cult_Leader.Psychic_Scream
 Power Mastermind_Summon.Cult_Leader.Sisters
 {
 	Name                 "Sisters"           
-	DisplayName          "P3240964949"
+	DisplayName          "P9999000010"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
@@ -718,9 +714,9 @@ Power Mastermind_Summon.Cult_Leader.Sisters
 	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kEnduranceDiscount_Boost, kDebuff_Defense_Boost, kKnockback_Boost, kDebuff_ToHit_Boost, kHeal_Boost
 	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MastermindSummon_Necromancy_SkeletalWarriors.PFX"
 	include              menu\Powers\AnimFX\PlayerPowers\MastermindSummon_Necromancy_SkeletalWarriors.PFX
-	DisplayShortHelp     "P60863633"
-	DisplayHelp          "P6845850"
-	IconName             "Necromancy_SummonSkeletonWarrior.tga"
+	DisplayShortHelp     "P9999000011"
+	DisplayHelp          "P9999000012"
+	IconName             "DemonSummoning_SummonDemons.tga"
 	TimeToConfirm        0
 	ShowBuffIcon         kFalse
 
@@ -779,7 +775,7 @@ Power Mastermind_Summon.Cult_Leader.Sisters
 Power Mastermind_Summon.Cult_Leader.Summon_Familiars
 {
 	Name                 "Summon_Familiars"             
-	DisplayName          "P2038123334"
+	DisplayName          "P9999000013"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
@@ -802,9 +798,9 @@ Power Mastermind_Summon.Cult_Leader.Summon_Familiars
 	IgnoreStrength       True
 	VisualFX             "menu\Powers\AnimFX\Mastermind_Thugs_Summon_Thugs.pfx"
 	include              menu\Powers\AnimFX\Mastermind_Thugs_Summon_Thugs.pfx
-	DisplayShortHelp     "P3619002621"
-	DisplayHelp          "P1046894572"
-	IconName             "Thugs_TargetedSummonMob.tga"
+	DisplayShortHelp     "P9999000014"
+	DisplayHelp          "P9999000015"
+	IconName             "DemonSummoning_HellonEarth.tga"
 	TimeToConfirm        0
 	ShowBuffIcon         kFalse
 
@@ -939,7 +935,7 @@ Power Mastermind_Summon.Cult_Leader.Summon_Familiars
 Power Mastermind_Summon.Cult_Leader.Priestess
 {
 	Name                 "Priestess"                        
-	DisplayName          "P3124304184"
+	DisplayName          "P9999000016"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
@@ -961,9 +957,9 @@ Power Mastermind_Summon.Cult_Leader.Priestess
 	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kEnduranceDiscount_Boost, kDebuff_Defense_Boost, kKnockback_Boost, kDebuff_ToHit_Boost, kImmobilized_Boost, kHeal_Boost, kFear_Boost, kHold_Boost
 	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MastermindSummon_Necromancy_Lich.PFX"
 	include              menu\Powers\AnimFX\PlayerPowers\MastermindSummon_Necromancy_Lich.PFX
-	DisplayShortHelp     "P1774529674"
-	DisplayHelp          "P2108190491"
-	IconName             "Necromancy_SummonLitch.tga"
+	DisplayShortHelp     "P9999000017"
+	DisplayHelp          "P9999000018"
+	IconName             "DemonSummoning_SummonDemonPrince.tga"
 	TimeToConfirm        0
 	ShowBuffIcon         kFalse
 
@@ -996,7 +992,7 @@ Power Mastermind_Summon.Cult_Leader.Priestess
 Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 {
 	Name                 "Unholy_Ascension"            
-	DisplayName          "P3036150683"
+	DisplayName          "P9999000019"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
@@ -1018,10 +1014,10 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 	BoostsAllowed        kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost
 	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MastermindSummon_Necromancy_DarkEmpowerment.PFX"
 	include              menu\Powers\AnimFX\PlayerPowers\MastermindSummon_Necromancy_DarkEmpowerment.PFX
-	DisplayShortHelp     "P1390363359"
-	DisplayHelp          "P3829807173"
-	DisplayAttackerHit   "P1402300901"
-	IconName             "Necromancy_DarkEmpowerment.tga"
+	DisplayShortHelp     "P9999000007"
+	DisplayHelp          "P9999000020"
+	DisplayAttackerHit   "P9999000009"
+	IconName             "DemonSummoning_AbyssalEmpowerment.tga"
 	TimeToConfirm        0
 	MaxTargetsHit        16
 	AnimMainTargetOnly   kTrue
