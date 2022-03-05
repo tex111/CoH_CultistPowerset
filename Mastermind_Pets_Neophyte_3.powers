@@ -10,8 +10,8 @@ Power Mastermind_Pets.Neophyte_3.Moonbeam
 	EntsAffected         kFoe
 	EntsAutoHit          kNone
 	Target               kFoe
-	Range                100
-	EnduranceCost        15
+	Range                175
+	EnduranceCost        14.352
 	IdeaCost             0
 	TravelSuppression    1
 	InterruptTime        0

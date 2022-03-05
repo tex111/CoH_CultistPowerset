@@ -4053,7 +4053,7 @@ PowerSet Mastermind_Pets.Neophyte
 	MaxDifficulty 9999
 	
 
-	Powers Mastermind_Pets.Neophyte.Gloom
+	Powers Mastermind_Pets.Neophyte.Shadowy_Binds
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4061,7 +4061,7 @@ PowerSet Mastermind_Pets.Neophyte
 	MinDifficulty 2
 	MaxDifficulty 9999
 	
-	Powers Mastermind_Pets.Neophyte.Tenebrous_Tentacles
+	Powers Mastermind_Pets.Neophyte.Living_Shadows
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4143,9 +4143,8 @@ PowerSet Mastermind_Pets.Sister
 	AIMaxRankCon 9999
 	MinDifficulty 2
 	MaxDifficulty 9999
-	
 
-	Powers Mastermind_Pets.Sister.Mental_Blast
+	Powers Mastermind_Pets.Sister.Nullify_Pain
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4170,7 +4169,7 @@ PowerSet Mastermind_Pets.Sister_2
 	DisplayHelp      "P1916322435"
 	IconName         "Skeleton_2_set.ico"
 
-	Powers Mastermind_Pets.Sister_2.Share_Pain
+	Powers Mastermind_Pets.Sister_2.Weaken_Resolve
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4178,7 +4177,7 @@ PowerSet Mastermind_Pets.Sister_2
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Mastermind_Pets.Sister_2.Subdue
+	Powers Mastermind_Pets.Sister_2.Enforced_Morale
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4204,14 +4203,6 @@ PowerSet Mastermind_Pets.Sister_3
 	IconName         "Skeleton_3_set.ico"
 
 	Powers Mastermind_Pets.Sister_3.World_of_Pain
-	Available 0
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-
-	Powers Mastermind_Pets.Sister_3.Psychic_Scream
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4260,15 +4251,7 @@ PowerSet Mastermind_Pets.Familiar
 	MinDifficulty 2
 	MaxDifficulty 9999
 	
-	Powers Mastermind_Pets.Familiar.Vicious_Bite
-	Available 0
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-
-	Powers Mastermind_Pets.Familiar.PM_Vicious_Bite
+	Powers Mastermind_Pets.Familiar.Claw_Rake
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4301,7 +4284,7 @@ PowerSet Mastermind_Pets.Priestess
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Mastermind_Pets.Priestess.Mental_Blast
+	Powers Mastermind_Pets.Priestess.Dark_Grasp
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4309,7 +4292,7 @@ PowerSet Mastermind_Pets.Priestess
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Mastermind_Pets.Priestess.Psionic_Lance
+	Powers Mastermind_Pets.Priestess.Gloom
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4326,7 +4309,7 @@ PowerSet Mastermind_Pets.Priestess_2
 	DisplayHelp      "P3106505096"
 	IconName         "Lich_2_set.ico"
 
-	Powers Mastermind_Pets.Priestess_2.Telekinetic_blast
+	Powers Mastermind_Pets.Priestess_2.Umbral_Torrent
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4359,7 +4342,15 @@ PowerSet Mastermind_Pets.Priestess_3
 	DisplayHelp      "P3106505096"
 	IconName         "Lich_3_set.ico"
 
-	Powers Mastermind_Pets.Priestess_3.Torrent
+	Powers Mastermind_Pets.Priestess_3.Abyssal_Gaze
+	Available 0
+	AIMaxLevel 0
+	AIMinRankCon -9999
+	AIMaxRankCon 9999
+	MinDifficulty 2
+	MaxDifficulty 9999
+	
+	Powers Mastermind_Pets.Priestess_3.Haunt
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999

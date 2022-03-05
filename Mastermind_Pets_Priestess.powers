@@ -216,7 +216,7 @@ Power Mastermind_Pets.Priestess.Super_Leap
 	Radius               0
 	Arc                  0
 	DisplayShortHelp     "P3583698820"
-	DisplayHelp          "P1720205226"
+	DisplayHelp          "P513346247"
 	IconName             "Jump_LongJump.tga"
 	TimeToConfirm        0
 
@@ -227,7 +227,7 @@ Power Mastermind_Pets.Priestess.Super_Leap
 		Aspect               kCur
 		Attrib               kJumpHeight
 		Target               kSelf
-		Scale                10
+		Scale                1
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -248,7 +248,7 @@ Power Mastermind_Pets.Priestess.Super_Leap
 		Aspect               kCur
 		Attrib               kSpeedJumping
 		Target               kSelf
-		Scale                10
+		Scale                1
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -269,7 +269,7 @@ Power Mastermind_Pets.Priestess.Super_Leap
 		Aspect               kCur
 		Attrib               kRunSpeed
 		Target               kSelf
-		Scale                10
+		Scale                0.1
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -282,27 +282,26 @@ Power Mastermind_Pets.Priestess.Super_Leap
 		CancelOnMiss         kFalse
 		StackType            kReplace
 	}
-	
-		AttribMod
+
+	AttribMod
 	{
 		Name                 "Control"                     
 		Table                "Melee_Control"               
 		Aspect               kCur
 		Attrib               kMovementControl
 		Target               kSelf
-		Scale                25
+		Scale                10
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10.25
+		Duration             10
 		Magnitude            1
 		Period               0
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		CancelEvents         Held, Stunned, Sleep
 	}
 
 	AttribMod
@@ -312,60 +311,116 @@ Power Mastermind_Pets.Priestess.Super_Leap
 		Aspect               kCur
 		Attrib               kMovementFriction
 		Target               kSelf
-		Scale                25
+		Scale                10
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10.25
+		Duration             10
 		Magnitude            1
 		Period               0
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		CancelEvents         Held, Stunned, Sleep
 	}
 }
 
-Power Mastermind_Pets.Priestess.Mental_Blast
+Power Mastermind_Pets.Priestess.Dark_Grasp
 {
-	Name                 "Mental_Blast"                
-	DisplayName          "P2292978182"
+	Name                 "Dark_Grasp"                  
+	DisplayName          "P1766639583"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
-	Accuracy             1
-	AttackTypes          kRanged_Attack, kPsionic_Attack
+	Accuracy             1.2
+	AttackTypes          kRanged_Attack, kNegative_Energy_Attack
 	EntsAffected         kFoe
 	EntsAutoHit          kNone
 	Target               kFoe
-	Range                100
-	EnduranceCost        5.2
+	Range                80
+	EnduranceCost        8.528
 	IdeaCost             0
-	TravelSuppression    4
+	TravelSuppression    3.5
 	InterruptTime        0
 	TimeToActivate       1.67
-	RechargeTime         4
+	RechargeTime         8
 	ActivatePeriod       0
 	EffectArea           kCharacter
 	Radius               0
 	Arc                  0
-	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kEnduranceDiscount_Boost, kRange_Boost, kRecharge_Boost
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\DefenderRanged_PsychicBlast_MentalBlast.PFX"
-	include              menu\Powers\AnimFX\PlayerPowers\DefenderRanged_PsychicBlast_MentalBlast.PFX
-	DisplayShortHelp     "P2707916763"
-	DisplayHelp          "P915789469"
-	IconName             "PsychicBlast_MentalBlast.tga"
+	BoostsAllowed        kAccuracy_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost, kHold_Boost, kDamage_Boost, kDebuff_ToHit_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\ControllerControl_DarknessControl_DarkGrasp.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\ControllerControl_DarknessControl_DarkGrasp.PFX
+	DisplayShortHelp     "P734849811"
+	DisplayHelp          "P3378054260"
+	IconName             "DarknessControl_DarkGrasp.tga"
 	TimeToConfirm        0
-	DisplayTargetShortHelp "P3214140212"
-	DisplayTargetHelp    "P3199664469"
+	DisplayTargetShortHelp "P2998313093"
+	DisplayTargetHelp    "P693586527"
 
+	AttribMod
+	{
+		Name                 "Immobilize"                  
+		Table                "Ranged_Immobilize"           
+		Aspect               kCur
+		Attrib               kHeld
+		Target               kTarget
+		Scale                12
+		Type                 kDuration
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            3
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P2841660671"
+		DisplayVictimHit     "P3609240155"
+		StackType            kStack
+		ConditionalBits      ANIM_LASSOSTUN, ANIM_STRONG
+		ConditionalFX        PFX
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Immobilize"                  
+		Table                "Ranged_Immobilize"           
+		Aspect               kCur
+		Attrib               kHeld
+		Target               kTarget
+		Scale                4
+		Type                 kDuration
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            4
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P2841660671"
+		DisplayVictimHit     "P3609240155"
+		StackType            kStack
+		ConditionalBits      ANIM_LASSOSTUN, ANIM_STRONG
+		ConditionalFX        PFX
+		Requires             enttype target> player eq
+		Suppress             Held 15 WhenInactive
+		Suppress             Sleep 15 WhenInactive
+		Suppress             Stunned 15 WhenInactive
+		Suppress             Immobilized 15 WhenInactive
+		Suppress             Terrorized 15 WhenInactive
+	}
+	
 	AttribMod
 	{
 		Name                 "Damage"                      
 		Table                "Ranged_Damage"               
 		Aspect               kAbs
-		Attrib               kPsionic
+		Attrib               knegative_Energy
 		Target               kTarget
 		Scale                1
 		Type                 kMagnitude
@@ -378,32 +433,10 @@ Power Mastermind_Pets.Priestess.Mental_Blast
 		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P1500200816"
-		DisplayVictimHit     "P2929122759"
+		DisplayAttackerHit   "P259212171"
+		DisplayVictimHit     "P3748865374"
 		StackType            kStack
 		Requires             enttype target> critter eq
-	}
-
-	AttribMod
-	{
-		Name                 "Slow"                        
-		Table                "Ranged_Slow"                 
-		Aspect               kStr
-		Attrib               kRechargeTime
-		Target               kTarget
-		Scale                0.3
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             6
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		ContinuingFX         PFX
 	}
 
 	AttribMod
@@ -411,9 +444,9 @@ Power Mastermind_Pets.Priestess.Mental_Blast
 		Name                 "Damage"                      
 		Table                "Ranged_Damage"               
 		Aspect               kAbs
-		Attrib               kPsionic
+		Attrib               knegative_Energy
 		Target               kTarget
-		Scale                2.33850826190333
+		Scale                2.6446
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
@@ -424,84 +457,111 @@ Power Mastermind_Pets.Priestess.Mental_Blast
 		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P1500200816"
-		DisplayVictimHit     "P2929122759"
+		DisplayAttackerHit   "P259212171"
+		DisplayVictimHit     "P3748865374"
 		StackType            kStack
 		Requires             enttype target> player eq
 	}
-}
-
-Power Mastermind_Pets.Priestess.Psionic_Lance
-{
-	Name                 "Psionic_Lance"         
-	DisplayName          "P2540702184"
-	Type                 kClick
-	Accuracy             1.2
-	AttackTypes          kRanged_Attack, kPsionic_Attack
-	EntsAffected         kFoe
-	EntsAutoHit          kNone
-	Target               kFoe
-	Range                175
-	EnduranceCost        14.352
-	IdeaCost             0
-	TravelSuppression    1
-	InterruptTime        0
-	TimeToActivate       1
-	RechargeTime         12
-	ActivatePeriod       0
-	EffectArea           kCharacter
-	Radius               0
-	Arc                  0
-	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\DefenderRanged_PsychicBlast_PsionicLance.PFX"
-	include              menu\Powers\AnimFX\PlayerPowers\DefenderRanged_PsychicBlast_PsionicLance.PFX
-	DisplayShortHelp     "P2924801690"
-	DisplayHelp          "P3227513845"
-	IconName             "PsychicBlast_PsionicLance.tga"
-	TimeToConfirm        0
-	DisplayTargetShortHelp "P3214140212"
-	DisplayTargetHelp    "P3598113204"
 
 	AttribMod
 	{
-		Name                 "Damage"                      
-		Table                "Ranged_Damage"               
-		Aspect               kAbs
-		Attrib               kPsionic
+		Name                 "DeBuff_ToHit"                
+		Table                "Ranged_DeBuff_ToHit"         
+		Aspect               kCur
+		Attrib               kToHit
 		Target               kTarget
-		Scale                2.76
+		Scale                0.75
 		Type                 kMagnitude
 		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P4098543091"
-		DisplayVictimHit     "P4275716365"
-		StackType            kStack
-		Requires             enttype target> critter eq
-	}
-
-	AttribMod
-	{
-		Name                 "Slow"                        
-		Table                "Ranged_Slow"                 
-		Aspect               kStr
-		Attrib               kRechargeTime
-		Target               kTarget
-		Scale                0.15
-		Type                 kMagnitude
-		AllowStrength        kFalse
 		AllowResistance      kTrue
 		Delay                0
 		Duration             10
 		Magnitude            1
 		Period               0
-		Chance               1
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+		ContinuingFX         PFX
+	}
+}
+
+Power Mastermind_Pets.Priestess.Gloom
+{
+	Name                 "Gloom"                       
+	DisplayName          "P3488406895"
+	ModesDisallowed      kDisable_All
+	Type                 kClick
+	Accuracy             1
+	AttackTypes          kRanged_Attack, kNegative_Energy_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kFoe
+	Range                80
+	EnduranceCost        8.528
+	IdeaCost             0
+	TravelSuppression    3
+	InterruptTime        0
+	TimeToActivate       1.67
+	RechargeTime         8
+	ActivatePeriod       0
+	EffectArea           kCharacter
+	Radius               0
+	Arc                  0
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost, kDebuff_ToHit_Boost
+	VisualFX             "menu/Powers/AnimFX/PlayerPowers/BlasterRanged_DarkBlast_Gloom.PFX"
+	include              menu/Powers/AnimFX/PlayerPowers/BlasterRanged_DarkBlast_Gloom.PFX
+	DisplayShortHelp     "P2098711268"
+	DisplayHelp          "P2528904550"
+	IconName             "DarkCast_SoulDrain.tga"
+	TimeToConfirm        0
+	CastThroughHold      kTRUE
+	CastThroughSleep     kTRUE
+	CastThroughStun      kTRUE
+	CastThroughTerrorize kTRUE
+	DisplayTargetShortHelp "P533426840"
+	DisplayTargetHelp    "P4275364033"
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               knegative_Energy
+		Target               kTarget
+		Scale                0.22
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             3.6
+		Magnitude            1
+		Period               0.5
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P2165607468"
+		DisplayVictimHit     "P2034897495"
+		StackType            kStack
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "DeBuff_ToHit"                
+		Table                "Ranged_DeBuff_ToHit"         
+		Aspect               kCur
+		Attrib               kToHit
+		Target               kTarget
+		Scale                0.75
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             10
+		Magnitude            1
+		Period               0
+		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kStack
@@ -513,21 +573,21 @@ Power Mastermind_Pets.Priestess.Psionic_Lance
 		Name                 "Damage"                      
 		Table                "Ranged_Damage"               
 		Aspect               kAbs
-		Attrib               kPsionic
+		Attrib               knegative_Energy
 		Target               kTarget
-		Scale                1.8394281296637
+		Scale                0.29033086037222
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
 		Delay                0
-		Duration             0
+		Duration             3.6
 		Magnitude            1
-		Period               0
-		Chance               1
+		Period               0.5
+		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P4098543091"
-		DisplayVictimHit     "P4275716365"
+		DisplayAttackerHit   "P2165607468"
+		DisplayVictimHit     "P2034897495"
 		StackType            kStack
 		Requires             enttype target> player eq
 	}

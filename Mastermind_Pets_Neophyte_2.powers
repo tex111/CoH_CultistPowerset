@@ -11,8 +11,8 @@ Power Mastermind_Pets.Neophyte_2.Night_Fall
 	EntsAffected         kFoe
 	EntsAutoHit          kNone
 	Target               kFoe
-	Range                60
-	EnduranceCost        10
+	Range                160
+	EnduranceCost        13.104
 	IdeaCost             0
 	TravelSuppression    3
 	InterruptTime        0
@@ -20,8 +20,8 @@ Power Mastermind_Pets.Neophyte_2.Night_Fall
 	RechargeTime         10
 	ActivatePeriod       0
 	EffectArea           kCone
-	Radius               60
-	Arc                  20
+	Radius               80
+	Arc                  25
 	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kDebuff_ToHit_Boost, kRange_Boost
 	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_NightFall.PFX"
 	include              menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_NightFall.PFX

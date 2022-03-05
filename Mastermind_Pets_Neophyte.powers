@@ -216,7 +216,7 @@ Power Mastermind_Pets.Neophyte.Super_Leap
 	Radius               0
 	Arc                  0
 	DisplayShortHelp     "P3583698820"
-	DisplayHelp          "P1720205226"
+	DisplayHelp          "P513346247"
 	IconName             "Jump_LongJump.tga"
 	TimeToConfirm        0
 
@@ -227,7 +227,7 @@ Power Mastermind_Pets.Neophyte.Super_Leap
 		Aspect               kCur
 		Attrib               kJumpHeight
 		Target               kSelf
-		Scale                10
+		Scale                1
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -248,7 +248,7 @@ Power Mastermind_Pets.Neophyte.Super_Leap
 		Aspect               kCur
 		Attrib               kSpeedJumping
 		Target               kSelf
-		Scale                10
+		Scale                1
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -269,7 +269,7 @@ Power Mastermind_Pets.Neophyte.Super_Leap
 		Aspect               kCur
 		Attrib               kRunSpeed
 		Target               kSelf
-		Scale                10
+		Scale                0.1
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -282,27 +282,26 @@ Power Mastermind_Pets.Neophyte.Super_Leap
 		CancelOnMiss         kFalse
 		StackType            kReplace
 	}
-	
-		AttribMod
+
+	AttribMod
 	{
 		Name                 "Control"                     
 		Table                "Melee_Control"               
 		Aspect               kCur
 		Attrib               kMovementControl
 		Target               kSelf
-		Scale                25
+		Scale                10
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10.25
+		Duration             10
 		Magnitude            1
 		Period               0
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		CancelEvents         Held, Stunned, Sleep
 	}
 
 	AttribMod
@@ -312,53 +311,52 @@ Power Mastermind_Pets.Neophyte.Super_Leap
 		Aspect               kCur
 		Attrib               kMovementFriction
 		Target               kSelf
-		Scale                25
+		Scale                10
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10.25
+		Duration             10
 		Magnitude            1
 		Period               0
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		CancelEvents         Held, Stunned, Sleep
 	}
 }
 
-Power Mastermind_Pets.Neophyte.Gloom
+Power Mastermind_Pets.Neophyte.Shadowy_Binds
 {
-	Name                 "Gloom"                       
-	DisplayName          "P3488406895"
+	Name                 "Shadowy_Binds"               
+	DisplayName          "P1776711588"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
-	Accuracy             1
+	Accuracy             1.2
 	AttackTypes          kRanged_Attack, kNegative_Energy_Attack
 	EntsAffected         kFoe
 	EntsAutoHit          kNone
 	Target               kFoe
 	Range                80
-	EnduranceCost        5
+	EnduranceCost        7.8
 	IdeaCost             0
 	TravelSuppression    3
 	InterruptTime        0
-	TimeToActivate       1.1
+	TimeToActivate       1.2
 	RechargeTime         4
 	ActivatePeriod       0
 	EffectArea           kCharacter
 	Radius               0
 	Arc                  0
-	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost, kDebuff_ToHit_Boost
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_Gloom.PFX"
-	include              menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_Gloom.PFX
-	DisplayShortHelp     "P2098711268"
-	DisplayHelp          "P905511279"
-	IconName             "DarkCast_SoulDrain.tga"
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost, kImmobilized_Boost, kDebuff_ToHit_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\ControllerControl_DarknessControl_ShadowyBinds.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\ControllerControl_DarknessControl_ShadowyBinds.PFX
+	DisplayShortHelp     "P3017900070"
+	DisplayHelp          "P111201724"
+	IconName             "DarknessControl_ShadowyBinds.tga"
 	TimeToConfirm        0
-	DisplayTargetShortHelp "P533426840"
-	DisplayTargetHelp    "P4275364033"
+	DisplayTargetShortHelp "P368684123"
+	DisplayTargetHelp    "P1495139328"
 
 	AttribMod
 	{
@@ -367,20 +365,21 @@ Power Mastermind_Pets.Neophyte.Gloom
 		Aspect               kAbs
 		Attrib               knegative_Energy
 		Target               kTarget
-		Scale                0.22
+		Scale                0.2
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
 		Delay                0
-		Duration             3.6
+		Duration             9.2
 		Magnitude            1
-		Period               0.5
+		Period               2
 		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P4165490657"
-		DisplayVictimHit     "P3094782639"
+		DisplayAttackerHit   "P3913018392"
+		DisplayVictimHit     "P4225483368"
 		StackType            kStack
+		ContinuingFX         PFX
 		Requires             enttype target> critter eq
 	}
 
@@ -391,21 +390,77 @@ Power Mastermind_Pets.Neophyte.Gloom
 		Aspect               kAbs
 		Attrib               knegative_Energy
 		Target               kTarget
-		Scale                0.251906977316076
+		Scale                0.392
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
 		Delay                0
-		Duration             3.6
+		Duration             9.2
 		Magnitude            1
-		Period               0.5
+		Period               2
 		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P4165490657"
-		DisplayVictimHit     "P3094782639"
+		DisplayAttackerHit   "P3913018392"
+		DisplayVictimHit     "P4225483368"
 		StackType            kStack
+		ContinuingFX         PFX
 		Requires             enttype target> player eq
+	}
+
+	AttribMod
+	{
+		Name                 "Immobilize"                  
+		Table                "Ranged_Immobilize"           
+		Aspect               kCur
+		Attrib               kImmobilize
+		Target               kTarget
+		Scale                15
+		Type                 kDuration
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            4
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kTrue
+		DisplayAttackerHit   "P362106426"
+		DisplayVictimHit     "P2175482535"
+		StackType            kStack
+		ConditionalFX        PFX
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kImmobilize
+		Target               kTarget
+		Scale                4
+		Type                 kDuration
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            5
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kTrue
+		DisplayAttackerHit   "P362106426"
+		DisplayVictimHit     "P2175482535"
+		StackType            kStack
+		ConditionalFX        PFX
+		Requires             enttype target> player eq
+		Suppress             Held 15 WhenInactive
+		Suppress             Sleep 15 WhenInactive
+		Suppress             Stunned 15 WhenInactive
+		Suppress             Immobilized 15 WhenInactive
+		Suppress             Terrorized 15 WhenInactive
 	}
 
 	AttribMod
@@ -420,21 +475,125 @@ Power Mastermind_Pets.Neophyte.Gloom
 		AllowStrength        kTrue
 		AllowResistance      kTrue
 		Delay                0
-		Duration             10
+		Duration             15
 		Magnitude            1
 		Period               0
 		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kStack
-		ContinuingFX         PFX
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kRes
+		Attrib               kKnockback
+		Target               kTarget
+		Scale                100
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kRes
+		Attrib               kKnockup
+		Target               kTarget
+		Scale                100
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kKnockback
+		Target               kTarget
+		Scale                -100
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kKnockup
+		Target               kTarget
+		Scale                -100
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kFly
+		Target               kTarget
+		Scale                -1.6
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
 	}
 }
 
-Power Mastermind_Pets.Neophyte.Tenebrous_Tentacles
+Power Mastermind_Pets.Neophyte.Living_Shadows
 {
-	Name                 "Tenebrous_Tentacles"         
-	DisplayName          "P2726905308"
+	Name                 "Living_Shadows"              
+	DisplayName          "P3511745250"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
@@ -443,42 +602,42 @@ Power Mastermind_Pets.Neophyte.Tenebrous_Tentacles
 	EntsAutoHit          kNone
 	Target               kFoe
 	Range                80
-	EnduranceCost        10
+	EnduranceCost        13
 	IdeaCost             0
-	TravelSuppression    2
+	TravelSuppression    3
 	InterruptTime        0
 	TimeToActivate       1.67
-	RechargeTime         10
+	RechargeTime         8
 	ActivatePeriod       0
 	EffectArea           kSphere
-	Radius               20
+	Radius               30
 	Arc                  0
 	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kDebuff_ToHit_Boost, kImmobilized_Boost, kRange_Boost
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_TenebrousTentacles.PFX"
-	include              menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_TenebrousTentacles.PFX
-	DisplayShortHelp     "P1227418640"
-	DisplayHelp          "P3492206660"
-	IconName             "DarkCast_TenebrousTentacles.tga"
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\ControllerControl_DarknessControl_LivingShadows.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\ControllerControl_DarknessControl_LivingShadows.PFX
+	DisplayShortHelp     "P420247998"
+	DisplayHelp          "P1058106044"
+	IconName             "DarknessControl_LivingShadows.tga"
 	TimeToConfirm        0
-	MaxTargetsHit        10
+	MaxTargetsHit        16
 	DisplayTargetShortHelp "P3411616425"
-	DisplayTargetHelp    "P2600012039"
+	DisplayTargetHelp    "P1111096912"
 
 	AttribMod
 	{
 		Name                 "Damage"                      
 		Table                "Ranged_Damage"               
 		Aspect               kAbs
-		Attrib               ksmashing
+		Attrib               knegative_Energy
 		Target               kTarget
-		Scale                0.1
+		Scale                0.13
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
 		Delay                1
-		Duration             7.1
+		Duration             5.2
 		Magnitude            1
-		Period               1
+		Period               2
 		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
@@ -495,67 +654,19 @@ Power Mastermind_Pets.Neophyte.Tenebrous_Tentacles
 		Aspect               kAbs
 		Attrib               knegative_Energy
 		Target               kTarget
-		Scale                0.135
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P1852627711"
-		DisplayVictimHit     "P3880016683"
-		StackType            kStack
-		Requires             enttype target> critter eq
-	}
-
-	AttribMod
-	{
-		Name                 "Damage"                      
-		Table                "Ranged_Damage"               
-		Aspect               kAbs
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                0.0605253005900371
+		Scale                0.298016677935542
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
 		Delay                1
-		Duration             7.1
+		Duration             5.2
 		Magnitude            1
-		Period               1
+		Period               2
 		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		DisplayAttackerHit   "P1513428947"
 		DisplayVictimHit     "P3534711131"
-		StackType            kStack
-		Requires             enttype target> player eq
-	}
-
-	AttribMod
-	{
-		Name                 "Damage"                      
-		Table                "Ranged_Damage"               
-		Aspect               kAbs
-		Attrib               knegative_Energy
-		Target               kTarget
-		Scale                0.0835825579576703
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P1852627711"
-		DisplayVictimHit     "P3880016683"
 		StackType            kStack
 		Requires             enttype target> player eq
 	}
@@ -600,6 +711,8 @@ Power Mastermind_Pets.Neophyte.Tenebrous_Tentacles
 		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P362106426"
+		DisplayVictimHit     "P2175482535"
 		StackType            kStack
 		ConditionalFX        PFX
 		Requires             enttype target> critter eq
@@ -612,7 +725,7 @@ Power Mastermind_Pets.Neophyte.Tenebrous_Tentacles
 		Aspect               kCur
 		Attrib               kImmobilize
 		Target               kTarget
-		Scale                2
+		Scale                4
 		Type                 kDuration
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -623,6 +736,8 @@ Power Mastermind_Pets.Neophyte.Tenebrous_Tentacles
 		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P362106426"
+		DisplayVictimHit     "P2175482535"
 		StackType            kStack
 		ConditionalFX        PFX
 		Requires             enttype target> player eq
@@ -631,5 +746,110 @@ Power Mastermind_Pets.Neophyte.Tenebrous_Tentacles
 		Suppress             Stunned 15 WhenInactive
 		Suppress             Immobilized 15 WhenInactive
 		Suppress             Terrorized 15 WhenInactive
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kRes
+		Attrib               kKnockback
+		Target               kTarget
+		Scale                100
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kRes
+		Attrib               kKnockup
+		Target               kTarget
+		Scale                100
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kKnockback
+		Target               kTarget
+		Scale                -100
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kKnockup
+		Target               kTarget
+		Scale                -100
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kCur
+		Attrib               kFly
+		Target               kTarget
+		Scale                -1.6
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kFalse
+		Delay                0
+		Duration             15
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kStack
 	}
 }

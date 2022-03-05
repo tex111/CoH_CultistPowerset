@@ -371,7 +371,7 @@ Power Mastermind_Pets.Familiar.Super_Leap
 	Radius               0
 	Arc                  0
 	DisplayShortHelp     "P3583698820"
-	DisplayHelp          "P1720205226"
+	DisplayHelp          "P513346247"
 	IconName             "Jump_LongJump.tga"
 	TimeToConfirm        0
 
@@ -382,7 +382,7 @@ Power Mastermind_Pets.Familiar.Super_Leap
 		Aspect               kCur
 		Attrib               kJumpHeight
 		Target               kSelf
-		Scale                10
+		Scale                1
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -403,7 +403,7 @@ Power Mastermind_Pets.Familiar.Super_Leap
 		Aspect               kCur
 		Attrib               kSpeedJumping
 		Target               kSelf
-		Scale                10
+		Scale                1
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -424,7 +424,7 @@ Power Mastermind_Pets.Familiar.Super_Leap
 		Aspect               kCur
 		Attrib               kRunSpeed
 		Target               kSelf
-		Scale                10
+		Scale                0.1
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
@@ -437,27 +437,26 @@ Power Mastermind_Pets.Familiar.Super_Leap
 		CancelOnMiss         kFalse
 		StackType            kReplace
 	}
-	
-		AttribMod
+
+	AttribMod
 	{
 		Name                 "Control"                     
 		Table                "Melee_Control"               
 		Aspect               kCur
 		Attrib               kMovementControl
 		Target               kSelf
-		Scale                25
+		Scale                10
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10.25
+		Duration             10
 		Magnitude            1
 		Period               0
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		CancelEvents         Held, Stunned, Sleep
 	}
 
 	AttribMod
@@ -467,26 +466,25 @@ Power Mastermind_Pets.Familiar.Super_Leap
 		Aspect               kCur
 		Attrib               kMovementFriction
 		Target               kSelf
-		Scale                25
+		Scale                10
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kFalse
 		Delay                0
-		Duration             10.25
+		Duration             10
 		Magnitude            1
 		Period               0
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		CancelEvents         Held, Stunned, Sleep
 	}
 }
 
-Power Mastermind_Pets.Familiar.Vicious_Bite
+Power Mastermind_Pets.Familiar.Claw_Rake
 {
-	Name                 "Vicious_Bite"                
-	DisplayName          "P2993048958"
+	Name                 "Claw_Rake"                   
+	DisplayName          "P4021652017"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
@@ -497,9 +495,8 @@ Power Mastermind_Pets.Familiar.Vicious_Bite
 	Range                7
 	EnduranceCost        4.368
 	IdeaCost             0
-	PreferenceMultiplier 1
 	InterruptTime        0
-	TimeToActivate       1.27
+	TimeToActivate       1
 	RechargeTime         3
 	ActivatePeriod       0
 	EffectArea           kCharacter
@@ -509,15 +506,37 @@ Power Mastermind_Pets.Familiar.Vicious_Bite
 	// Additional Power Factors
 	StrengthsDisallowed  kRange
 	                     
-	ChainIntoPower       Mastermind_Pets.Howler_Wolf.PM_Vicious_Bite
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MastermindSummon_BeastMastery_Wolf_ViciousBite.pfx"
-	include              menu\Powers\AnimFX\PlayerPowers\MastermindSummon_BeastMastery_Wolf_ViciousBite.pfx
-	DisplayShortHelp     "P429012212"
-	DisplayHelp          "P499669620"
-	IconName             "BeastMastery_PetViciousBite.tga"
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\Pets_UmbraBeast_ClawRake.pfx"
+	include              menu\Powers\AnimFX\PlayerPowers\Pets_UmbraBeast_ClawRake.pfx
+	DisplayShortHelp     "P3123816685"
+	DisplayHelp          "P520570816"
+	IconName             "DarknessControl_UmbraBeastClawRake.tga"
 	TimeToConfirm        0
 	DisplayTargetShortHelp "P2103286178"
-	DisplayTargetHelp    "P3272411351"
+	DisplayTargetHelp    "P2785780600"
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Melee_Damage"                
+		Aspect               kAbs
+		Attrib               knegative_Energy
+		Target               kTarget
+		Scale                0.504
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.000
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P3816800425"
+		DisplayVictimHit     "P1651000187"
+		StackType            kStack
+	}
 
 	AttribMod
 	{
@@ -526,7 +545,7 @@ Power Mastermind_Pets.Familiar.Vicious_Bite
 		Aspect               kAbs
 		Attrib               kLethal
 		Target               kTarget
-		Scale                0.84
+		Scale                0.336
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
@@ -549,7 +568,7 @@ Power Mastermind_Pets.Familiar.Vicious_Bite
 		Aspect               kAbs
 		Attrib               kLethal
 		Target               kTarget
-		Scale                0.1
+		Scale                0.125
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
@@ -560,85 +579,9 @@ Power Mastermind_Pets.Familiar.Vicious_Bite
 		Chance               0.80
 		NearGround           kFalse
 		CancelOnMiss         kTrue
-		DisplayAttackerHit   "P1911694447"
-		DisplayVictimHit     "P1152259098"
+		DisplayAttackerHit   "P3163970743"
+		DisplayVictimHit     "P912584398"
 		StackType            kStack
-	}
-
-	AttribMod
-	{
-		Name                 "CritActive"                  
-		Table                "Melee_Damage"                
-		Aspect               kAbs
-		Attrib               kLethal
-		Target               kTarget
-		Scale                0.42
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.000
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P3656532103"
-		DisplayVictimHit     "P1317101327"
-		StackType            kStack
-		DisplayFloat         "P2440464263"
-	}
-}
-
-Power Mastermind_Pets.Familiar.PM_Vicious_Bite
-{
-	Name                 "PM_Vicious_Bite"             
-	DisplayName          "P3111718594"
-	ModesDisallowed      kDisable_All
-	Type                 kClick
-	Accuracy             1
-	EntsAffected         kMyOwner
-	EntsAutoHit          kMyOwner
-	Target               kCaster
-	Range                0
-	EnduranceCost        0
-	IdeaCost             0
-	PreferenceMultiplier -1
-	InterruptTime        0
-	TimeToActivate       0
-	RechargeTime         0
-	ActivatePeriod       0
-	EffectArea           kSphere
-	Radius               30
-	Arc                  0
-	DisplayShortHelp     "P1771697811"
-	DisplayHelp          "P2692741157"
-	IconName             "BeastMastery_PetViciousBite.tga"
-	TimeToConfirm        0
-	MaxTargetsHit        1
-	ShowBuffIcon         kFALSE
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Melee_Ones"                  
-		Aspect               kAbs
-		Attrib               kGrantPower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               0.2135
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             temporary_powers.temporary_powers.Pack_Mentality_Lock target.ownPower? !
-		Reward               Temporary_Powers.Temporary_Powers.Pack_Mentality
 	}
 }
 

@@ -10100,7 +10100,7 @@ VillainDef "MastermindPets_Familiar"
 	PowerTags Beast
 	DisplayDescription "P9999100008"
 	Gender Neuter
-	AIConfig "Pets_BeastMastery"
+	AIConfig "Pets_Melee"
 	PetVisibility 0
 	CanZone
 	GroupDescription "P9999000001"
@@ -10109,272 +10109,272 @@ VillainDef "MastermindPets_Familiar"
 	Level 1
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 2
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 3
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 4
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 5
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 6
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 7
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 8
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 9
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 10
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 11
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 12
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 13
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 14
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 15
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 16
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 17
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 18
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 19
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 20
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 21
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 22
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 23
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 24
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 25
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 26
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 27
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 28
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 29
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 30
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 31
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 32
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 33
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 34
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 35
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 36
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 37
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 38
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 39
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 40
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 41
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 42
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 43
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 44
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 45
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 46
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 47
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 48
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 49
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 50
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 51
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 52
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 53
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 	Level 54
 	{
 		DisplayNames P9999100007
-		Costumes "Wolf"
+		Costumes "Cult_Familiar"
 	}
 }
 
