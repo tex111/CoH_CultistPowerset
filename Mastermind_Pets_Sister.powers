@@ -326,35 +326,36 @@ Power Mastermind_Pets.Sister.Super_Leap
 	}
 }
 
-Power Mastermind_Pets.Sister.Nullify_Pain
+Power Mastermind_Pets.Sister.Share_Pain
 {
-	Name                 "Nullify_Pain"                
-	DisplayName          "P175982904"
+	Name                 "Share_Pain"                  
+	DisplayName          "P879858767"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
-	EntsAffected         kFriend, kCaster
-	EntsAutoHit          kFriend, kCaster
-	Target               kCaster
-	Range                0
-	EnduranceCost        13
+	EntsAffected         kFriend
+	EntsAutoHit          kFriend
+	Target               kFriend
+	Range                80
+	EnduranceCost        0.52
 	IdeaCost             0
 	TravelSuppression    4
 	InterruptTime        0
-	TimeToActivate       2.03
+	TimeToActivate       2.27
 	RechargeTime         8
 	ActivatePeriod       0
-	EffectArea           kSphere
-	Radius               25
+	EffectArea           kCharacter
+	Radius               0
 	Arc                  0
-	BoostsAllowed        kRecharge_Boost, kEnduranceDiscount_Boost, kHeal_Boost
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorBuff_PainDomination_NullifyPain.PFX"
-	include              menu\Powers\AnimFX\PlayerPowers\CorruptorBuff_PainDomination_NullifyPain.PFX
-	DisplayShortHelp     "P1906443399"
-	DisplayHelp          "P2671953981"
-	IconName             "PainDomination_NullifyPain.tga"
+	BoostsAllowed        kRecharge_Boost, kEnduranceDiscount_Boost, kHeal_Boost, kRange_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorBuff_PainDomination_SharePain.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\CorruptorBuff_PainDomination_SharePain.PFX
+	DisplayShortHelp     "P744337357"
+	DisplayHelp          "P2245539053"
+	IconName             "PainDomination_SharePain.tga"
 	TimeToConfirm        0
-	MaxTargetsHit        255
+	DisplayTargetShortHelp "P1263567590"
+	DisplayTargetHelp    "P2103335943"
 
 	AttribMod
 	{
@@ -363,10 +364,33 @@ Power Mastermind_Pets.Sister.Nullify_Pain
 		Aspect               kAbs
 		Attrib               kHeal
 		Target               kTarget
-		Scale                1
+		Scale                4
 		Type                 kMagnitude
 		AllowStrength        kTrue
 		AllowResistance      kTrue
+		Delay                0.5
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P222304424"
+		DisplayVictimHit     "P3640235457"
+		StackType            kStack
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               kSpecial
+		Target               kSelf
+		Scale                2
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
 		Delay                0
 		Duration             0
 		Magnitude            1
@@ -374,8 +398,7 @@ Power Mastermind_Pets.Sister.Nullify_Pain
 		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P3262186852"
-		DisplayVictimHit     "P1319995399"
+		DisplayVictimHit     "P264829216"
 		StackType            kStack
 	}
 }

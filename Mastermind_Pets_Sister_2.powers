@@ -246,500 +246,129 @@ Power Mastermind_Pets.Sister_2.Weaken_Resolve
 	}
 }
 
-Power Mastermind_Pets.Sister_2.Enforced_Morale
+Power Mastermind_Pets.Sister_2.Life_Drain
 {
-	Name                 "Enforced_Morale"             
-	DisplayName          "P1482189927"
+	Name                 "Life_Drain"                  
+	DisplayName          "P1678761175"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
-	EntsAffected         kFriend
-	EntsAutoHit          kFriend
-	Target               kFriend
-	Range                70
-	EnduranceCost        5.2
+	AttackTypes          kRanged_Attack, kNegative_Energy_Attack
+	EntsAffected         kFoe
+	EntsAutoHit          kNone
+	Target               kFoe
+	Range                60
+	EnduranceCost        8.528
 	IdeaCost             0
+	TravelSuppression    3
 	InterruptTime        0
-	TimeToActivate       1
-	RechargeTime         4
+	TimeToActivate       1.93
+	RechargeTime         8
 	ActivatePeriod       0
 	EffectArea           kCharacter
 	Radius               0
 	Arc                  0
-	BoostsAllowed        kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorBuff_PainDomination_EnforcedMorale.PFX"
-	include              menu\Powers\AnimFX\PlayerPowers\CorruptorBuff_PainDomination_EnforcedMorale.PFX
-	DisplayShortHelp     "P2378465487"
-	DisplayHelp          "P1081314404"
-	DisplayAttackerHit   "P1987621853"
-	DisplayVictimHit     "P2884066914"
-	IconName             "PainDomination_EnforcedMorale.tga"
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost, kDebuff_ToHit_Boost, kHeal_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_LifeDrain.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\CorruptorRanged_DarkBlast_LifeDrain.PFX
+	DisplayShortHelp     "P3887098239"
+	DisplayHelp          "P2353967879"
+	IconName             "DarkCast_LifeDrain.tga"
 	TimeToConfirm        0
-	Cancelable           kTrue
-	DisplayTargetShortHelp "P1046625860"
-	DisplayTargetHelp    "P3640605281"
+	DisplayTargetShortHelp "P2190949330"
+	DisplayTargetHelp    "P2299365496"
 
 	AttribMod
 	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kCur
-		Attrib               kStun
-		Target               kTarget
-		Scale                -30
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		ContinuingFX         PFX
-		Requires             kMeter target> 0.9 < isPVPMap? ! &&
-	}
-
-	AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kRes
-		Attrib               kSleep
-		Target               kTarget
-		Scale                5
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < isPVPMap? ! &&
-	}
-
-	AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kCur
-		Attrib               kSleep
-		Target               kTarget
-		Scale                -30
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < isPVPMap? ! &&
-	}
-
-	AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kCur
-		Attrib               kImmobilize
-		Target               kTarget
-		Scale                -30
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < isPVPMap? ! &&
-	}
-
-	AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kCur
-		Attrib               kHeld
-		Target               kTarget
-		Scale                -30
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < isPVPMap? ! &&
-	}
-
-	AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kCur
-		Attrib               kConfused
-		Target               kTarget
-		Scale                -30
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < isPVPMap? ! &&
-	}
-
-	AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kCur
-		Attrib               kTerrorized
-		Target               kTarget
-		Scale                -30
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < isPVPMap? ! &&
-	}
-
-	AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kRes
-		Attrib               kStun
-		Target               kTarget
-		Scale                3
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < isPVPMap? &&
-	}
-
-	AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kRes
-		Attrib               kSleep
-		Target               kTarget
-		Scale                8
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < isPVPMap? &&
-	}
-
-	AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kRes
-		Attrib               kImmobilize
-		Target               kTarget
-		Scale                3
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < isPVPMap? &&
-	}
-
-	AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kRes
-		Attrib               kHeld
-		Target               kTarget
-		Scale                3
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < isPVPMap? &&
-	}
-
-	AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kRes
-		Attrib               kConfused
-		Target               kTarget
-		Scale                3
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < isPVPMap? &&
-	}
-
-	AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kRes
-		Attrib               kTerrorized
-		Target               kTarget
-		Scale                3
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < isPVPMap? &&
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
 		Aspect               kAbs
-		Attrib               kSpecial
+		Attrib               knegative_Energy
 		Target               kTarget
-		Scale                1
-		Type                 kExpression
-		AllowStrength        kFalse
-		AllowResistance      kFalse
+		Scale                1.64
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
 		Delay                0
 		Duration             0
 		Magnitude            1
 		Period               0
-		Chance               1
+		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P2235750538"
+		DisplayVictimHit     "P3094782639"
 		StackType            kStack
-		Requires             kMeter target> 0.9 < Cur.kHitPoints target> Max.kHitPoints target> 0.9 * > &&
-		MagnitudeExpr        Max.kHitPoints target> 0.9 * Cur.kHitPoints target> -
+		Requires             enttype target> critter eq
+	}
+
+	AttribMod
+	{
+		Name                 "Damage"                      
+		Table                "Ranged_Damage"               
+		Aspect               kAbs
+		Attrib               knegative_Energy
+		Target               kTarget
+		Scale                2.80107033568641
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P2235750538"
+		DisplayVictimHit     "P3094782639"
+		StackType            kStack
+		Requires             enttype target> player eq
+	}
+
+	AttribMod
+	{
+		Name                 "HealSelf"                    
+		Table                "Ranged_HealSelf"             
+		Aspect               kAbs
+		Attrib               kHeal
+		Target               kSelf
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0.5
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayVictimHit     "P3467427143"
+		StackType            kStack
 		AllowCombatMods      kFalse
 	}
 
 	AttribMod
 	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kStr
-		Attrib               kRechargeTime
-		Target               kTarget
-		Scale                0.05
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < Str.kRechargeTime target> 1.21 < &&
-	}
-
-	AttribMod
-	{
-		Name                 "SpeedRunning"                
-		Table                "Ranged_SpeedRunning"         
+		Name                 "DeBuff_ToHit"                
+		Table                "Ranged_DeBuff_ToHit"         
 		Aspect               kCur
-		Attrib               kRunSpeed
+		Attrib               kToHit
 		Target               kTarget
-		Scale                0.05
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < Cur.kRunSpeed target> 1.25 < && Power_DisallowSpeedBoost target.TokenOwned? ! &&
-	}
-
-	AttribMod
-	{
-		Name                 "SpeedFlying"                 
-		Table                "Ranged_SpeedFlying"          
-		Aspect               kCur
-		Attrib               kFlySpeed
-		Target               kTarget
-		Scale                0.05
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < Cur.kFlySpeed target> 1.25 < && Power_DisallowSpeedBoost target.TokenOwned? ! &&
-	}
-
-	AttribMod
-	{
-		Name                 "SpeedJumping"                
-		Table                "Ranged_SpeedJumping"         
-		Aspect               kCur
-		Attrib               kSpeedJumping
-		Target               kTarget
-		Scale                0.05
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < Cur.kSpeedJumping target> 1.25 < && Power_DisallowSpeedBoost target.TokenOwned? ! &&
-	}
-
-	AttribMod
-	{
-		Name                 "Leap"                        
-		Table                "Ranged_Leap"                 
-		Aspect               kCur
-		Attrib               kJumpHeight
-		Target               kTarget
-		Scale                0.05
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             kMeter target> 0.9 < Cur.kJumpHeight target> 1.12 < && Power_DisallowSpeedBoost target.TokenOwned? ! &&
-	}
-
-	AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kRes
-		Attrib               kPerceptionRadius
-		Target               kTarget
-		Scale                2.5
+		Scale                0.75
 		Type                 kMagnitude
 		AllowStrength        kTrue
-		AllowResistance      kFalse
+		AllowResistance      kTrue
 		Delay                0
-		Duration             90
+		Duration             10
 		Magnitude            1
 		Period               0
-		Chance               1
+		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kStack
-	}
-
-	AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kCur
-		Attrib               kPerceptionRadius
-		Target               kTarget
-		Scale                2.5
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kFalse
-		Delay                0
-		Duration             90
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
+		ContinuingFX         PFX
 	}
 }
 

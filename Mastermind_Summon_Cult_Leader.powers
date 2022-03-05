@@ -653,7 +653,7 @@ Power Mastermind_Summon.Cult_Leader.Forbidden_Knowledge
 		CancelOnMiss         kFalse
 		StackType            kIgnore
 		Requires             MastermindPets_Sister target.VillainName>
-		Reward               Mastermind_Pets.Sister_2.Enforced_Morale
+		Reward               Mastermind_Pets.Sister_2.Life_Drain
 	}
 
 	AttribMod
@@ -722,7 +722,7 @@ Power Mastermind_Summon.Cult_Leader.Forbidden_Knowledge
 		CancelOnMiss         kFalse
 		StackType            kIgnore
 		Requires             MastermindPets_Priestess target.VillainName>
-		Reward               Mastermind_Pets.Priestess_2.Life_Drain
+		Reward               Mastermind_Pets.Priestess_2.Abyssal_Gaze
 	}
 
 	AttribMod
@@ -1096,9 +1096,9 @@ Power Mastermind_Summon.Cult_Leader.Sisters
 	}
 }
 
-Power Mastermind_Summon.Cult_Leader.Summon_Familiars
+Power Mastermind_Summon.Cult_Leader.Shades
 {
-	Name                 "Summon_Familiars"             
+	Name                 "Shades"                       
 	DisplayName          "P9999000013"
 	ModesDisallowed      kDisable_All
 	Type                 kClick
@@ -1106,36 +1106,34 @@ Power Mastermind_Summon.Cult_Leader.Summon_Familiars
 	EntsAffected         kFoe
 	EntsAutoHit          kFoe
 	Target               kFoe
-	Range                60
-	EnduranceCost        13
+	Range                80
+	EnduranceCost        10.4
 	IdeaCost             0
 	TravelSuppression    4
 	InterruptTime        0
-	TimeToActivate       1.07
-	RechargeTime         600
+	TimeToActivate       2.33
+	RechargeTime         210
 	ActivatePeriod       0
 	EffectArea           kCharacter
 	Radius               0
 	Arc                  0
-	TargetNearGround     kTrue
-	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRecharge_Boost, kEnduranceDiscount_Boost
-	IgnoreStrength       True
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\MastermindSummon_Necromancy_SkeletalWarriors.PFX"
-	include              menu\Powers\AnimFX\PlayerPowers\MastermindSummon_Necromancy_SkeletalWarriors.PFX
-	DisplayShortHelp     "P9999000014"
-	DisplayHelp          "P9999000015"
-	IconName             "DemonSummoning_HellonEarth.tga"
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kRange_Boost, kRecharge_Boost, kEnduranceDiscount_Boost, kFear_Boost, kDebuff_ToHit_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\ControllerControl_DarknessControl_Haunt.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\ControllerControl_DarknessControl_Haunt.PFX
+	DisplayShortHelp     "P3340232153"
+	DisplayHelp          "P2816566842"
+	IconName             "DarknessControl_Haunt.tga"
 	TimeToConfirm        0
-	ShowBuffIcon         kFalse
+	Cancelable           kTrue
 
 	AttribMod
 	{
-		Name                 "Levelminus2"                 
-		Table                "Ranged_Level"          
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
 		Aspect               kCur
 		Attrib               kEntCreate
 		Target               kTarget
-		Scale                1
+		Scale                -1
 		Type                 kMagnitude
 		AllowStrength        kFalse
 		AllowResistance      kFalse
@@ -1146,22 +1144,20 @@ Power Mastermind_Summon.Cult_Leader.Summon_Familiars
 		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace
-		EntityDef            MastermindPets_Familiar
+		StackType            kIgnore
+		ContinuingFX         PFX
+		EntityDef            Pets_Shade
 		PriorityList         PL_FightPreferMelee
-		// Additional Power Attribs
-		KeepThroughDeath     kTrue
-		AllowCombatMods      kFalse
 	}
 
 	AttribMod
 	{
-		Name                 "Levelminus2"                 
-		Table                "Ranged_Level"          
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
 		Aspect               kCur
 		Attrib               kEntCreate
 		Target               kTarget
-		Scale                1
+		Scale                -1
 		Type                 kMagnitude
 		AllowStrength        kFalse
 		AllowResistance      kFalse
@@ -1172,87 +1168,31 @@ Power Mastermind_Summon.Cult_Leader.Summon_Familiars
 		Chance               1.00
 		NearGround           kFalse
 		CancelOnMiss         kFalse
-		StackType            kReplace
-		EntityDef            MastermindPets_Familiar
+		StackType            kIgnore
+		EntityDef            Pets_Shade
 		PriorityList         PL_FightPreferMelee
-		// Additional Power Attribs
-		KeepThroughDeath     kTrue
-		AllowCombatMods      kFalse
 	}
+
 	AttribMod
 	{
-		Name                 "Levelminus2"                 
-		Table                "Ranged_Level"          
-		Aspect               kCur
-		Attrib               kEntCreate
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kAbs
+		Attrib               kGrantPower
 		Target               kTarget
 		Scale                1
 		Type                 kMagnitude
 		AllowStrength        kFalse
 		AllowResistance      kFalse
 		Delay                0
-		Duration             0
+		Duration             1
 		Magnitude            1
 		Period               0
-		Chance               1.00
+		Chance               1
 		NearGround           kFalse
 		CancelOnMiss         kFalse
 		StackType            kReplace
-		EntityDef            MastermindPets_Familiar
-		PriorityList         PL_FightPreferMelee
-		// Additional Power Attribs
-		KeepThroughDeath     kTrue
-		AllowCombatMods      kFalse
-	}
-	AttribMod
-	{
-		Name                 "Levelminus2"                 
-		Table                "Ranged_Level"          
-		Aspect               kCur
-		Attrib               kEntCreate
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kReplace
-		EntityDef            MastermindPets_Familiar
-		PriorityList         PL_FightPreferMelee
-		// Additional Power Attribs
-		KeepThroughDeath     kTrue
-		AllowCombatMods      kFalse
-	}
-	AttribMod
-	{
-		Name                 "Levelminus2"                 
-		Table                "Ranged_Level"         
-		Aspect               kCur
-		Attrib               kEntCreate
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kReplace
-		EntityDef            MastermindPets_Familiar
-		PriorityList         PL_FightPreferMelee
-		// Additional Power Attribs
-		KeepThroughDeath     kTrue
-		AllowCombatMods      kFalse
+		Reward               Temporary_Powers.Temporary_Powers.Haunted
 	}
 }
 
@@ -1458,9 +1398,8 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 		CancelOnMiss         kFalse
 		StackType            kIgnore
 		Requires             MastermindPets_Priestess target.VillainName>
-		Reward               Mastermind_Pets.Priestess_3.Abyssal_Gaze
+		Reward               Mastermind_Pets.Priestess_3.Soul_Storm
 	}
-
 
 	AttribMod
 	{
@@ -1483,5 +1422,28 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 		StackType            kIgnore
 		Requires             MastermindPets_Priestess target.VillainName>
 		Reward               Mastermind_Pets.Priestess_3.Haunt
+	}
+	
+	AttribMod
+	{
+		Name                 "Ones"                        
+		Table                "Ranged_Ones"                 
+		Aspect               kAbs
+		Attrib               kGrantPower
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kFalse
+		AllowResistance      kFalse
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1.00
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		StackType            kIgnore
+		Requires             MastermindPets_Priestess target.VillainName>
+		Reward               Mastermind_Pets.Priestess_3.Unholy_Ascension
 	}
 }

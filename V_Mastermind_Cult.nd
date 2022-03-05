@@ -1139,20 +1139,3 @@ NPC "Mastermind_Cult_Priestess"
 		}
 	}
 }
-
-NPC "Cult_Familiar"
-{
-	DisplayName "Cult Familiar"
-	Class "Class_Minion_Grunt"
-	Level 1
-	Rank 1
-	XP 777
-	Costume
-	{
-		EntTypeFile "Shade_Beast"
-		CostumeFilePrefix "Daemon"
-		Scale -.5
-		BoneScale 0
-		SkinColor 255, 184, 190
-	}
-}

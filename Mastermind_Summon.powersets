@@ -595,7 +595,7 @@ PowerSet Mastermind_Summon.Cult_Leader
 	DisplayHelp      "P9999000002"
 	IconName         "Necromancy_set.ico"
 
-	Powers Mastermind_Summon.Cult_Leader.Mental_Blast
+	Powers Mastermind_Summon.Cult_Leader.Shadowy_Binds
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -611,7 +611,7 @@ PowerSet Mastermind_Summon.Cult_Leader
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Mastermind_Summon.Cult_Leader.Subdue
+	Powers Mastermind_Summon.Cult_Leader.Dark_Grasp
 	Available 1
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -627,7 +627,7 @@ PowerSet Mastermind_Summon.Cult_Leader
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Mastermind_Summon.Cult_Leader.Psychic_Scream
+	Powers Mastermind_Summon.Cult_Leader.Living_Shadows
 	Available 7
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -643,7 +643,7 @@ PowerSet Mastermind_Summon.Cult_Leader
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Mastermind_Summon.Cult_Leader.Summon_Familiars
+	Powers Mastermind_Summon.Cult_Leader.Shades
 	Available 17
 	AIMaxLevel 0
 	AIMinRankCon -9999

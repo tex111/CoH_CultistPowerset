@@ -4144,7 +4144,7 @@ PowerSet Mastermind_Pets.Sister
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Mastermind_Pets.Sister.Nullify_Pain
+	Powers Mastermind_Pets.Sister.Share_Pain
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4176,8 +4176,8 @@ PowerSet Mastermind_Pets.Sister_2
 	AIMaxRankCon 9999
 	MinDifficulty 2
 	MaxDifficulty 9999
-
-	Powers Mastermind_Pets.Sister_2.Enforced_Morale
+	
+	Powers Mastermind_Pets.Sister_2.Life_Drain
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4211,47 +4211,6 @@ PowerSet Mastermind_Pets.Sister_3
 	MaxDifficulty 9999
 
 	Powers Mastermind_Pets.Sister_3.Unholy_Ascension
-	Available 0
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-
-}
-PowerSet Mastermind_Pets.Familiar
-{
-	Name             "Familiar"
-	DisplayName      "P3178236627"
-	DisplayShortHelp "P3178236627"
-	DisplayHelp      "P2757174098"
-	IconName         "Ghosts_set.ico"
-
-	Powers Mastermind_Pets.Familiar.Resistance
-	Available 0
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-
-	Powers Mastermind_Pets.Familiar.Super_Leap
-	Available 0
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-
-	Powers Mastermind_Pets.Familiar.Self_Destruct
-	Available 0
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-	
-	Powers Mastermind_Pets.Familiar.Claw_Rake
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4317,7 +4276,7 @@ PowerSet Mastermind_Pets.Priestess_2
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Mastermind_Pets.Priestess_2.Life_Drain
+	Powers Mastermind_Pets.Priestess_2.Abyssal_Gaze
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4342,7 +4301,7 @@ PowerSet Mastermind_Pets.Priestess_3
 	DisplayHelp      "P3106505096"
 	IconName         "Lich_3_set.ico"
 
-	Powers Mastermind_Pets.Priestess_3.Abyssal_Gaze
+	Powers Mastermind_Pets.Priestess_3.Soul_Storm
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999

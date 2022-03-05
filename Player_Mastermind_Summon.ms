@@ -909,11 +909,7 @@
 // ---------------------------------------------
 // Summon Familiars
 // Display Name :
-"P9999000013" "Summon Familiars"
-// Power Mouse-Over Text :
-"P9999000014" "Summon a group of Familiars"
-// Power Help Text :
-"P9999000015" "Summons five Familairs. They are only temporarily under your control and will act independantly. Recharge: Very Long"
+"P9999000013" "Shades"
 // ---------------------------------------------
 // Priestess
 // Display Name :
