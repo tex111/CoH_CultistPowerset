@@ -4144,7 +4144,7 @@ PowerSet Mastermind_Pets.Sister
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Mastermind_Pets.Sister.Share_Pain
+	Powers Mastermind_Pets.Sister.Nullify_Pain
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4152,7 +4152,7 @@ PowerSet Mastermind_Pets.Sister
 	MinDifficulty 2
 	MaxDifficulty 9999
 
-	Powers Mastermind_Pets.Sister.Twilight_Grasp
+	Powers Mastermind_Pets.Sister.Share_Pain
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4169,7 +4169,7 @@ PowerSet Mastermind_Pets.Sister_2
 	DisplayHelp      "P1916322435"
 	IconName         "Skeleton_2_set.ico"
 
-	Powers Mastermind_Pets.Sister_2.Weaken_Resolve
+	Powers Mastermind_Pets.Sister_2.Envenom
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4177,7 +4177,7 @@ PowerSet Mastermind_Pets.Sister_2
 	MinDifficulty 2
 	MaxDifficulty 9999
 	
-	Powers Mastermind_Pets.Sister_2.Life_Drain
+	Powers Mastermind_Pets.Sister_2.Masochism
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4202,7 +4202,7 @@ PowerSet Mastermind_Pets.Sister_3
 	DisplayHelp      "P1916322435"
 	IconName         "Skeleton_3_set.ico"
 
-	Powers Mastermind_Pets.Sister_3.World_of_Pain
+	Powers Mastermind_Pets.Sister_3.Shades
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999
@@ -4302,14 +4302,6 @@ PowerSet Mastermind_Pets.Priestess_3
 	IconName         "Lich_3_set.ico"
 
 	Powers Mastermind_Pets.Priestess_3.Soul_Storm
-	Available 0
-	AIMaxLevel 0
-	AIMinRankCon -9999
-	AIMaxRankCon 9999
-	MinDifficulty 2
-	MaxDifficulty 9999
-	
-	Powers Mastermind_Pets.Priestess_3.Haunt
 	Available 0
 	AIMaxLevel 0
 	AIMinRankCon -9999

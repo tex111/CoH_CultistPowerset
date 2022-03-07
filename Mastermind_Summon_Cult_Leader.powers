@@ -286,7 +286,7 @@ Power Mastermind_Summon.Cult_Leader.Neophytes
 	Radius               0
 	Arc                  0
 	TargetNearGround     kTrue
-	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kEnduranceDiscount_Boost, kDebuff_ToHit_Boost, kHeal_Boost
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kEnduranceDiscount_Boost, kDebuff_ToHit_Boost, kImmobilized_Boost
 	VisualFX             "menu\Powers\AnimFX\Mastermind_Ninja_Summon_Ninjas.pfx"
 	include              menu\Powers\AnimFX\Mastermind_Ninja_Summon_Ninjas.pfx
 	DisplayShortHelp     "P9999000004"
@@ -630,7 +630,7 @@ Power Mastermind_Summon.Cult_Leader.Forbidden_Knowledge
 		CancelOnMiss         kFalse
 		StackType            kIgnore
 		Requires             MastermindPets_Sister target.VillainName>
-		Reward               Mastermind_Pets.Sister_2.Weaken_Resolve
+		Reward               Mastermind_Pets.Sister_2.Envenom
 	}
 
 	AttribMod
@@ -653,7 +653,7 @@ Power Mastermind_Summon.Cult_Leader.Forbidden_Knowledge
 		CancelOnMiss         kFalse
 		StackType            kIgnore
 		Requires             MastermindPets_Sister target.VillainName>
-		Reward               Mastermind_Pets.Sister_2.Life_Drain
+		Reward               Mastermind_Pets.Sister_2.Masochism
 	}
 
 	AttribMod
@@ -1035,7 +1035,7 @@ Power Mastermind_Summon.Cult_Leader.Sisters
 	Radius               0
 	Arc                  0
 	TargetNearGround     kTrue
-	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kEnduranceDiscount_Boost, kDebuff_Defense_Boost, kKnockback_Boost, kDebuff_ToHit_Boost, kHeal_Boost
+	BoostsAllowed        kAccuracy_Boost, kEnduranceDiscount_Boost, kDebuff_Defense_Boost, kHeal_Boost, kRes_Damage_Boost
 	VisualFX             "menu\Powers\AnimFX\Mastermind_Ninja_Summon_Ninjas.pfx"
 	include              menu\Powers\AnimFX\Mastermind_Ninja_Summon_Ninjas.pfx
 	DisplayShortHelp     "P9999000011"
@@ -1218,7 +1218,7 @@ Power Mastermind_Summon.Cult_Leader.Priestess
 	Radius               0
 	Arc                  0
 	TargetNearGround     kTrue
-	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kEnduranceDiscount_Boost, kDebuff_Defense_Boost, kKnockback_Boost, kDebuff_ToHit_Boost, kImmobilized_Boost, kHeal_Boost, kFear_Boost, kHold_Boost
+	BoostsAllowed        kAccuracy_Boost, kDamage_Boost, kEnduranceDiscount_Boost, kKnockback_Boost, kDebuff_ToHit_Boost, kHold_Boost
 	VisualFX             "menu\Powers\AnimFX\Mastermind_Ninja_Summon_Ninjas.pfx"
 	include              menu\Powers\AnimFX\Mastermind_Ninja_Summon_Ninjas.pfx
 	DisplayShortHelp     "P9999000017"
@@ -1258,17 +1258,17 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 	Name                 "Unholy_Ascension"            
 	DisplayName          "P9999000019"
 	ModesDisallowed      kDisable_All
-	Type                 kClick
+	Type                 kAuto
 	Accuracy             1
 	AIGroups             kMastermindUpgrade2
 	EntsAffected         kMyPet
 	EntsAutoHit          kMyPet
 	Target               kMyPet
-	Range                30
-	EnduranceCost        22.75
+	Range                0
+	EnduranceCost        0
 	IdeaCost             0
 	InterruptTime        0
-	TimeToActivate       2.07
+	TimeToActivate       0
 	RechargeTime         10
 	ActivatePeriod       0
 	EffectArea           kSphere
@@ -1352,7 +1352,7 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 		CancelOnMiss         kFalse
 		StackType            kIgnore
 		Requires             MastermindPets_Sister target.VillainName>
-		Reward               Mastermind_Pets.Sister_3.World_of_Pain
+		Reward               Mastermind_Pets.Sister_3.Shades
 	}
 
 	AttribMod
@@ -1399,29 +1399,6 @@ Power Mastermind_Summon.Cult_Leader.Unholy_Ascension
 		StackType            kIgnore
 		Requires             MastermindPets_Priestess target.VillainName>
 		Reward               Mastermind_Pets.Priestess_3.Soul_Storm
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kAbs
-		Attrib               kGrantPower
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             0
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kIgnore
-		Requires             MastermindPets_Priestess target.VillainName>
-		Reward               Mastermind_Pets.Priestess_3.Haunt
 	}
 	
 	AttribMod

@@ -326,6 +326,61 @@ Power Mastermind_Pets.Sister.Super_Leap
 	}
 }
 
+Power Mastermind_Pets.Sister.Nullify_Pain
+{
+	Name                 "Nullify_Pain"                
+	DisplayName          "P175982904"
+	ModesDisallowed      kDisable_All
+	Type                 kClick
+	Accuracy             1
+	AIGroups             kHealAlly
+	EntsAffected         kFriend, kCaster
+	EntsAutoHit          kFriend, kCaster
+	Target               kCaster
+	Range                0
+	EnduranceCost        13
+	IdeaCost             0
+	TravelSuppression    4
+	InterruptTime        0
+	TimeToActivate       2.03
+	RechargeTime         8
+	ActivatePeriod       0
+	EffectArea           kSphere
+	Radius               25
+	Arc                  0
+	BoostsAllowed        kRecharge_Boost, kEnduranceDiscount_Boost, kHeal_Boost
+	VisualFX             "menu\Powers\AnimFX\PlayerPowers\CorruptorBuff_PainDomination_NullifyPain.PFX"
+	include              menu\Powers\AnimFX\PlayerPowers\CorruptorBuff_PainDomination_NullifyPain.PFX
+	DisplayShortHelp     "P1906443399"
+	DisplayHelp          "P2671953981"
+	IconName             "PainDomination_NullifyPain.tga"
+	TimeToConfirm        0
+	MaxTargetsHit        255
+
+	AttribMod
+	{
+		Name                 "Heal"                        
+		Table                "Ranged_Heal"                 
+		Aspect               kAbs
+		Attrib               kHeal
+		Target               kTarget
+		Scale                1
+		Type                 kMagnitude
+		AllowStrength        kTrue
+		AllowResistance      kTrue
+		Delay                0
+		Duration             0
+		Magnitude            1
+		Period               0
+		Chance               1
+		NearGround           kFalse
+		CancelOnMiss         kFalse
+		DisplayAttackerHit   "P3262186852"
+		DisplayVictimHit     "P1319995399"
+		StackType            kStack
+	}
+}
+
 Power Mastermind_Pets.Sister.Share_Pain
 {
 	Name                 "Share_Pain"                  
@@ -333,6 +388,7 @@ Power Mastermind_Pets.Sister.Share_Pain
 	ModesDisallowed      kDisable_All
 	Type                 kClick
 	Accuracy             1
+	AIGroups             kHealAlly
 	EntsAffected         kFriend
 	EntsAutoHit          kFriend
 	Target               kFriend
@@ -342,7 +398,7 @@ Power Mastermind_Pets.Sister.Share_Pain
 	TravelSuppression    4
 	InterruptTime        0
 	TimeToActivate       2.27
-	RechargeTime         8
+	RechargeTime         15
 	ActivatePeriod       0
 	EffectArea           kCharacter
 	Radius               0
@@ -400,485 +456,5 @@ Power Mastermind_Pets.Sister.Share_Pain
 		CancelOnMiss         kFalse
 		DisplayVictimHit     "P264829216"
 		StackType            kStack
-	}
-}
-
-Power Mastermind_Pets.Sister.Twilight_Grasp
-{
-	Name                 "Twilight_Grasp"              
-	DisplayName          "P4164717180"
-	ModesDisallowed      kDisable_All
-	Type                 kClick
-	Accuracy             1
-	AttackTypes          kRanged_Attack, kNegative_Energy_Attack
-	EntsAffected         kFoe
-	EntsAutoHit          kNone
-	Target               kFoe
-	Range                80
-	EnduranceCost        7.8
-	IdeaCost             0
-	TravelSuppression    3.5
-	InterruptTime        0
-	TimeToActivate       2.37
-	RechargeTime         8
-	ActivatePeriod       0
-	EffectArea           kCharacter
-	Radius               0
-	Arc                  0
-	BoostsAllowed        kRecharge_Boost, kEnduranceDiscount_Boost, kRange_Boost, kAccuracy_Boost, kDebuff_ToHit_Boost, kHeal_Boost
-	VisualFX             "menu\Powers\AnimFX\PlayerPowers\DefenderBuff_DarkMiasma_TwilightGrasp.PFX"
-	include              menu\Powers\AnimFX\PlayerPowers\DefenderBuff_DarkMiasma_TwilightGrasp.PFX
-	DisplayShortHelp     "P1331656250"
-	DisplayHelp          "P3867344021"
-	IconName             "DarkMiasma_TwilightGrasp.tga"
-	TimeToConfirm        0
-	DisplayTargetShortHelp "P3286818350"
-	DisplayTargetHelp    "P2083002603"
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kCur
-		Attrib               kEntCreate
-		Target               kSelf
-		Scale                -1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kFalse
-		Delay                0
-		Duration             1
-		Magnitude            1
-		Period               0
-		Chance               1.0
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		EntityDef            Pets_Twilight
-		PriorityList         PL_StaticObject
-		AllowCombatMods      kFalse
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_ToHit"                
-		Table                "Ranged_Debuff_ToHit"         
-		Aspect               kCur
-		Attrib               kToHit
-		Target               kTarget
-		Scale                0.5
-		Type                 kMagnitude
-		AllowStrength        kTrue
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		DisplayAttackerHit   "P1458056037"
-		DisplayVictimHit     "P559189768"
-		StackType            kStack
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_Dam"                  
-		Table                "Ranged_Debuff_Dam"           
-		Aspect               kStr
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		ContinuingFX         PFX
-		Requires             enttype target> critter eq
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_Dam"                  
-		Table                "Ranged_Debuff_Dam"           
-		Aspect               kStr
-		Attrib               kLethal
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             enttype target> critter eq
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_Dam"                  
-		Table                "Ranged_Debuff_Dam"           
-		Aspect               kStr
-		Attrib               kFire
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             enttype target> critter eq
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_Dam"                  
-		Table                "Ranged_Debuff_Dam"           
-		Aspect               kStr
-		Attrib               kCold
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             enttype target> critter eq
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_Dam"                  
-		Table                "Ranged_Debuff_Dam"           
-		Aspect               kStr
-		Attrib               kEnergy
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             enttype target> critter eq
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_Dam"                  
-		Table                "Ranged_Debuff_Dam"           
-		Aspect               kStr
-		Attrib               knegative_Energy
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             enttype target> critter eq
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_Dam"                  
-		Table                "Ranged_Debuff_Dam"           
-		Aspect               kStr
-		Attrib               kToxic
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             enttype target> critter eq
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_Dam"                  
-		Table                "Ranged_Debuff_Dam"           
-		Aspect               kStr
-		Attrib               kPsionic
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             enttype target> critter eq
-	}
-
-	AttribMod
-	{
-		Name                 "Ones"                        
-		Table                "Ranged_Ones"                 
-		Aspect               kCur
-		Attrib               kRegeneration
-		Target               kTarget
-		Scale                -0.5
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		ContinuingFX         GenericContinuing/DeBuffMaxHPContinuing.fx
-		Requires             enttype target> critter eq
-	}
-
-	AttribMod
-	{
-		Name                 "Res_Boolean"                 
-		Table                "Ranged_Res_Boolean"          
-		Aspect               kCur
-		Attrib               kRegeneration
-		Target               kTarget
-		Scale                -11.5
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1.00
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		ContinuingFX         GenericContinuing/DeBuffMaxHPContinuing.fx
-		Requires             enttype target> player eq
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_Dam"                  
-		Table                "Ranged_Debuff_Dam"           
-		Aspect               kStr
-		Attrib               kSmashing
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		ContinuingFX         PFX
-		Requires             enttype target> player eq
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_Dam"                  
-		Table                "Ranged_Debuff_Dam"           
-		Aspect               kStr
-		Attrib               kLethal
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             enttype target> player eq
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_Dam"                  
-		Table                "Ranged_Debuff_Dam"           
-		Aspect               kStr
-		Attrib               kFire
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             enttype target> player eq
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_Dam"                  
-		Table                "Ranged_Debuff_Dam"           
-		Aspect               kStr
-		Attrib               kCold
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             enttype target> player eq
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_Dam"                  
-		Table                "Ranged_Debuff_Dam"           
-		Aspect               kStr
-		Attrib               kEnergy
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             enttype target> player eq
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_Dam"                  
-		Table                "Ranged_Debuff_Dam"           
-		Aspect               kStr
-		Attrib               knegative_Energy
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             enttype target> player eq
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_Dam"                  
-		Table                "Ranged_Debuff_Dam"           
-		Aspect               kStr
-		Attrib               kToxic
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             enttype target> player eq
-	}
-
-	AttribMod
-	{
-		Name                 "Debuff_Dam"                  
-		Table                "Ranged_Debuff_Dam"           
-		Aspect               kStr
-		Attrib               kPsionic
-		Target               kTarget
-		Scale                1
-		Type                 kMagnitude
-		AllowStrength        kFalse
-		AllowResistance      kTrue
-		Delay                0
-		Duration             20
-		Magnitude            1
-		Period               0
-		Chance               1
-		NearGround           kFalse
-		CancelOnMiss         kFalse
-		StackType            kStack
-		Requires             enttype target> player eq
 	}
 }

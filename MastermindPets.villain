@@ -9792,7 +9792,7 @@ VillainDef "MastermindPets_Sister"
 	PowerTags HumanSkeleton, Human
 	DisplayDescription "P9999100004"
 	Gender Female
-	AIConfig "Pets_Ranged"
+	AIConfig "Pets_Sister"
 	PetCommandability 1
 	CanZone
 	GroupDescription "P9999000001"
